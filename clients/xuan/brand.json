@@ -1,0 +1,22 @@
+{
+  "khach": "Xuân",
+  "slug": "xuan",
+  "mau_nhan": [
+    "#FFB000",
+    "#FFF1A8"
+  ],
+  "font_uu_tien": null,
+  "lut": {
+    "file": null,
+    "cuong_do": 0.65
+  },
+  "cta": {
+    "bat": true,
+    "chu": "Nhắn tin để nhận bảng giá",
+    "icon": "chat",
+    "follow": true
+  },
+  "logo": null,
+  "ghi_chu": "",
+  "lich_su": []
+}

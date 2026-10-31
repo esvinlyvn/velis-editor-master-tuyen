@@ -1,0 +1,584 @@
+{
+ "video": "xuan-hang-dieu",
+ "kenh": "xuan",
+ "recipe": "R1",
+ "style": "S3",
+ "edit": {
+  "voice": null,
+  "aroll": [
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 1.95,
+    "out": 6.45
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 6.62,
+    "out": 7.55,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 7.82,
+    "out": 9.05
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 9.22,
+    "out": 11.26,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 11.26,
+    "out": 15.5
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 15.5,
+    "out": 20.1,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 20.72,
+    "out": 21.65
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 21.82,
+    "out": 26.65,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 27.02,
+    "out": 28.15
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 28.42,
+    "out": 33.2,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 33.62,
+    "out": 38.35
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 38.67,
+    "out": 42.75,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 43.12,
+    "out": 45
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 45.42,
+    "out": 48.35,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 48.57,
+    "out": 49.55
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 49.82,
+    "out": 52.19,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 52.19,
+    "out": 53.35
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 53.77,
+    "out": 58.3,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 58.57,
+    "out": 59.6
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 59.87,
+    "out": 61.5,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 61.67,
+    "out": 63.65
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 64.07,
+    "out": 65.4,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 65.72,
+    "out": 66.95
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 67.17,
+    "out": 70.55,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 70.82,
+    "out": 75.27
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 75.45,
+    "out": 78.7,
+    "punch": true
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 78.7,
+    "out": 80.9
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 81.47,
+    "out": 82.85,
+    "punch": true
+   }
+  ],
+  "broll": []
+ },
+ "color": {
+  "correct": "eq=contrast=1.06:saturation=1.1",
+  "lut": null,
+  "strength": 0.6
+ },
+ "audio": {
+  "ambience": null
+ },
+ "roles": {
+  "con-so": "so-khong-lo",
+  "phap-ly": "nhan-neon",
+  "dia-danh": "dia-danh",
+  "canh-bao": "canh-bao",
+  "ten-du-an": "logo-ghep",
+  "cao-trao": "cao-trao",
+  "liet-ke": "quay-vong",
+  "cta": "go-chu"
+ },
+ "hook_peak": "0:17",
+ "blocks": [
+  {
+   "role": "con-so",
+   "at": 0.1,
+   "color": "so",
+   "o": {
+    "k": "CHỈ CÒN 2 NGÀY",
+    "value": 17,
+    "u": " THÁNG",
+    "s": "từ lúc khởi công",
+    "dur": 1.5
+   },
+   "_": "hook number: số chạm 17 đúng lúc nói",
+   "sfx": false,
+   "_sfx": "công thức bung-mo ghi tay ở sfx_layer để nâng riser (đo NHỎ −5,7 dB)"
+  },
+  {
+   "role": "phap-ly",
+   "at": "0:căn",
+   "color": "an-toan",
+   "o": {
+    "m": "SẮP BÀN GIAO"
+   }
+  },
+  {
+   "role": "phap-ly",
+   "at": "1:thông",
+   "color": "an-toan",
+   "o": {
+    "m": "THÔNG BÁO LÀM SỔ"
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "2:kiến",
+   "o": {
+    "k": "BIỆT THỰ",
+    "m": "SONG LẬP"
+   },
+   "sfx": [
+    "pop",
+    0.6
+   ],
+   "_sfx": "sfx-levels sau render: chỉnh mức"
+  },
+  {
+   "role": "dia-danh",
+   "at": "2:đường",
+   "color": "noi-chon",
+   "o": {
+    "m": "ĐƯỜNG HÀNG ĐIỀU"
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "3:sở",
+   "o": {
+    "k": "ĐIỀU KHÁC",
+    "m": "KHI SỞ HỮU"
+   }
+  },
+  {
+   "role": "canh-bao",
+   "at": "3:mét",
+   "shift": -0.4,
+   "o": {
+    "m": "MÉT VUÔNG XÂY DỰNG"
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "4:vị",
+   "o": {
+    "k": "VỊ TRÍ BỜ BIỂN",
+    "m": "SỔ LÂU DÀI"
+   }
+  },
+  {
+   "role": "cao-trao",
+   "at": "5:câu",
+   "o": {
+    "lines": [
+     {
+      "t": "câu chuyện",
+      "v": "dem",
+      "at": "5:câu"
+     },
+     {
+      "t": "ngôn ngữ thiết kế",
+      "v": "khoa",
+      "at": "5:ngôn"
+     },
+     {
+      "parts": [
+       {
+        "t": "chủ đầu tư",
+        "v": "dem"
+       },
+       {
+        "t": "đặt hết",
+        "v": "khoa"
+       }
+      ],
+      "at": "5:chủ"
+     },
+     {
+      "t": "tâm huyết",
+      "v": "chot",
+      "at": "5:tâm"
+     }
+    ]
+   }
+  },
+  {
+   "role": "ten-du-an",
+   "at": "5:Blanca",
+   "shift": -0.3,
+   "o": {
+    "m": "Blanca",
+    "s": "City",
+    "sub": "BIỂU TƯỢNG VŨNG TÀU"
+   },
+   "sfx": [
+    "sub-hit",
+    0.9
+   ],
+   "_sfx": "sfx-levels sau render: chỉnh mức"
+  },
+  {
+   "role": "chot-y",
+   "at": "7:chi",
+   "o": {
+    "k": "CHI TIẾT",
+    "m": "KIẾN TRÚC"
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "8:từng",
+   "o": {
+    "k": "TỪNG CĂN NHÀ",
+    "m": "PHONG CÁCH RIÊNG"
+   },
+   "sfx": [
+    "shimmer",
+    0.4
+   ],
+   "_sfx": "auto chọn neon-on dài 3 s → tiếng ngắn hơn, đúng nghĩa đẹp/riêng"
+  },
+  {
+   "role": "cao-trao",
+   "at": "9:tuy",
+   "o": {
+    "lines": [
+     {
+      "t": "tuy là",
+      "v": "dem",
+      "at": "9:tuy"
+     },
+     {
+      "t": "một dãy phố",
+      "v": "khoa",
+      "at": "9:dãy#1"
+     },
+     {
+      "t": "không căn nào",
+      "v": "chot",
+      "at": "9:không"
+     }
+    ]
+   }
+  },
+  {
+   "role": "con-so",
+   "at": "10:939",
+   "shift": -0.35,
+   "color": "so",
+   "o": {
+    "k": "HƠN",
+    "value": 939,
+    "u": " CĂN",
+    "dur": 0.6
+   }
+  },
+  {
+   "role": "con-so",
+   "at": "10:200",
+   "shift": -0.35,
+   "color": "so",
+   "o": {
+    "k": "CÓ ĐẾN HƠN",
+    "value": 200,
+    "s": "mẫu thiết kế",
+    "dur": 0.5
+   },
+   "_": "u \"MẪU\" bị xén dấu ngã (text-ink) → đưa xuống dòng viết tay"
+  },
+  {
+   "role": "liet-ke",
+   "at": "11:màu",
+   "shift": -0.2,
+   "o": {
+    "k": "KHÁC TỪ",
+    "words": [
+     "MÀU SẮC",
+     "KIẾN TRÚC",
+     "ĐƯỜNG NÉT"
+    ],
+    "step": 1.1
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "13:nó",
+   "o": {
+    "k": "TỪNG CĂN",
+    "m": "ĐỀU KHÁC NHAU"
+   },
+   "sfx": [
+    "click",
+    0.28
+   ],
+   "_sfx": "sfx-levels: click 0,45 đo TO +6,7 dB"
+  },
+  {
+   "role": "chot-y",
+   "at": "14:sự",
+   "o": {
+    "k": "SỰ KHÁC BIỆT",
+    "m": "TỪNG MẪU NHÀ"
+   },
+   "sfx": [
+    "ting",
+    0.2
+   ],
+   "_sfx": "sfx-levels sau render: chỉnh mức"
+  },
+  {
+   "role": "canh-bao",
+   "at": "15:không",
+   "o": {
+    "m": "TRÙNG LẶP"
+   }
+  },
+  {
+   "role": "cao-trao",
+   "at": "16:dấu",
+   "o": {
+    "lines": [
+     {
+      "t": "dấu ấn",
+      "v": "cam",
+      "at": "16:dấu"
+     },
+     {
+      "t": "đặc biệt",
+      "v": "khoa",
+      "at": "16:đặc"
+     },
+     {
+      "t": "cho chủ nhân",
+      "v": "dem",
+      "at": "16:chủ"
+     }
+    ]
+   },
+   "sfx": false,
+   "_sfx": "tiếng từng dòng ghi tay ở sfx_layer (toggle đo TO +6,3 dB)"
+  },
+  {
+   "role": "cta",
+   "at": "16:một",
+   "o": {
+    "m": "Nhắn tin nhận bảng giá"
+   }
+  }
+ ],
+ "sfx_layer": [
+  {
+   "at": 0.16,
+   "name": "riser",
+   "vol": 0.6,
+   "why": "hook bung-mo · dâng (vol 0.35 đo NHỎ)"
+  },
+  {
+   "at": 1.76,
+   "name": "sub-hit",
+   "vol": 0.6,
+   "why": "hook bung-mo · chốt đúng \"17\""
+  },
+  {
+   "at": 2.16,
+   "name": "sparkle",
+   "vol": 0.5,
+   "why": "hook bung-mo · lấp lánh · mức chỉnh theo sfx-levels"
+  },
+  {
+   "at": 4.5,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "punch-in (T2: click nhẹ)",
+   "name": "pop-multi"
+  },
+  {
+   "at": 6.66,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "punch-in",
+   "name": "neon-on"
+  },
+  {
+   "at": 8.7,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "punch-in đầu câu",
+   "name": "check"
+  },
+  {
+   "at": 12.94,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "punch-in",
+   "name": "shimmer"
+  },
+  {
+   "at": 24.43,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "đổi khung",
+   "name": "ding-idea"
+  },
+  {
+   "at": 36.6,
+   "role": "lap-lanh",
+   "vol": 1,
+   "why": "dòng BIỂU TƯỢNG VŨNG TÀU hiện · mức chỉnh theo sfx-levels",
+   "name": "sparkle"
+  },
+  {
+   "at": 38.02,
+   "role": "chu-vao",
+   "vol": 0.22,
+   "why": "punch-in",
+   "name": "success"
+  },
+  {
+   "at": 42.83,
+   "role": "chu-vao",
+   "vol": 0.45,
+   "why": "punch-in",
+   "name": "check"
+  },
+  {
+   "at": 46.18,
+   "role": "chu-vao",
+   "vol": 0.25,
+   "why": "punch-in giữa câu · tiếng ngắn 0,16 s (confirm 0,55 che chữ thở@46,0 theo QC --asr)",
+   "name": "camera"
+  },
+  {
+   "at": 52.4,
+   "role": "chu-vao",
+   "why": "số 939 chạy xong, chốt số",
+   "name": "whoosh-soft"
+  },
+  {
+   "at": 58.15,
+   "role": "chuyen-canh",
+   "why": "quay-vong đổi chữ: KIẾN TRÚC",
+   "name": "whoosh-tech"
+  },
+  {
+   "at": 59.25,
+   "role": "chuyen-canh",
+   "why": "quay-vong đổi chữ: ĐƯỜNG NÉT · mức chỉnh theo sfx-levels",
+   "name": "whoosh-fast",
+   "vol": 0.65
+  },
+  {
+   "at": 68.76,
+   "name": "toggle",
+   "vol": 0.16,
+   "why": "cao-trao dòng 1 dấu ấn (0.28 đo TO)"
+  },
+  {
+   "at": 69.26,
+   "name": "snap",
+   "vol": 0.28,
+   "why": "cao-trao dòng 2 ĐẶC BIỆT"
+  },
+  {
+   "at": 70.26,
+   "name": "check",
+   "vol": 0.28,
+   "why": "cao-trao dòng 3 cho chủ nhân"
+  }
+ ],
+ "tail": 1.5,
+ "hook_burst": false
+}

@@ -470,7 +470,9 @@
       let end = at;
       x.rows.forEach((R, i) => {
         const t = R.at ?? at + i * step;
-        tl.fromTo(R.row, { opacity: 0, x: -0.3 * fs, filter: B(6) }, { opacity: 1, x: 0, filter: B(0), duration: 0.32, ease: "power3.out", immediateRender: false }, t);
+        // immediateRender mặc định (true): dòng ẩn từ đầu, chỉ hiện đúng giờ nói tới. immediateRender: false làm mọi dòng
+        // hiện sẵn trước giờ vào (trạng thái CSS) — cả cụm bung cùng lúc, mất "vào theo lời" (lỗi thấy ở snapshot 31/10/2026)
+        tl.fromTo(R.row, { opacity: 0, x: -0.3 * fs, filter: B(6) }, { opacity: 1, x: 0, filter: B(0), duration: 0.32, ease: "power3.out" }, t);
         // dòng chốt: nhấp nháy 2 lần rồi đứng (flicker)
         if (R.parts.some((p) => p.v === "chot")) {
           tl.fromTo(R.row, { opacity: 1 }, { opacity: 0.35, duration: 0.05, immediateRender: false }, t + 0.34);

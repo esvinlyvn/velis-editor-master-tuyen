@@ -1,0 +1,7 @@
+{ "video": "xuan-hang-dieu", "client": "xuan",
+  "opening": "Chỉ còn 2 ngày nữa thôi là tròn 17 tháng từ lúc khởi công", "peak": 1.76, "payoff": 7.64,
+  "candidates": [
+    { "id": "number", "content": "17 THÁNG", "fit": 5, "payoff": 4, "motion": 5, "space": 4 },
+    { "id": "stamp", "content": "SẮP BÀN GIAO", "fit": 3, "payoff": 3, "motion": 4, "space": 4 },
+    { "id": "title", "content": "BLANCA CITY", "fit": 2, "payoff": 3, "motion": 3, "space": 4 }
+  ] }

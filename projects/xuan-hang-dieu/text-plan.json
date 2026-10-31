@@ -1,0 +1,12 @@
+{ "video": "xuan-hang-dieu", "mode": "bds", "client": "xuan", "family": "rieng", "main": "B18:dien-anh",
+  "moments": [
+    { "id": "k1", "role": "con-so", "text": "17 THÁNG", "energy": "cao" },
+    { "id": "k2", "role": "phap-ly", "text": "SẮP BÀN GIAO", "energy": "vua" },
+    { "id": "k3", "role": "dia-danh", "text": "ĐƯỜNG HÀNG ĐIỀU", "energy": "vua" },
+    { "id": "k4", "role": "canh-bao", "text": "MÉT VUÔNG XÂY DỰNG", "energy": "vua" },
+    { "id": "k5", "role": "ten-du-an", "text": "BLANCA CITY", "energy": "cao" },
+    { "id": "k6", "role": "cao-trao", "text": "ĐẶT HẾT TÂM HUYẾT", "energy": "cao" },
+    { "id": "k7", "role": "liet-ke", "text": "MÀU SẮC / KIẾN TRÚC / ĐƯỜNG NÉT", "energy": "vua" },
+    { "id": "k8", "role": "chot-y", "text": "PHONG CÁCH RIÊNG", "energy": "vua" },
+    { "id": "k9", "role": "cta", "text": "Nhắn tin để nhận bảng giá", "energy": "vua" }
+  ] }
