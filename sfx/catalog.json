@@ -1,0 +1,3572 @@
+{
+  "alarm": {
+    "file": "alarm.wav",
+    "base": "alarm",
+    "variant": 1,
+    "class": "accent",
+    "use": "hẹn giờ, deadline",
+    "duration": 3,
+    "mean": -30,
+    "peak": -16.6
+  },
+  "alert": {
+    "file": "alert.wav",
+    "base": "alert",
+    "variant": 1,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 3,
+    "mean": -30.1,
+    "peak": -16.1
+  },
+  "alert-2": {
+    "file": "alert-2.wav",
+    "base": "alert",
+    "variant": 2,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 0.85,
+    "mean": -30.1,
+    "peak": -14
+  },
+  "alert-3": {
+    "file": "alert-3.wav",
+    "base": "alert",
+    "variant": 3,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 0.95,
+    "mean": -30.5,
+    "peak": -17
+  },
+  "alert-4": {
+    "file": "alert-4.wav",
+    "base": "alert",
+    "variant": 4,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 0.56,
+    "mean": -30,
+    "peak": -15.6
+  },
+  "alert-5": {
+    "file": "alert-5.wav",
+    "base": "alert",
+    "variant": 5,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 0.79,
+    "mean": -30,
+    "peak": -9.3
+  },
+  "alert-6": {
+    "file": "alert-6.wav",
+    "base": "alert",
+    "variant": 6,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 1.09,
+    "mean": -30,
+    "peak": -11.9
+  },
+  "alert-7": {
+    "file": "alert-7.wav",
+    "base": "alert",
+    "variant": 7,
+    "class": "accent",
+    "use": "cảnh báo",
+    "duration": 0.63,
+    "mean": -30,
+    "peak": -13.7
+  },
+  "awkward": {
+    "file": "awkward.wav",
+    "base": "awkward",
+    "variant": 1,
+    "class": "accent",
+    "use": "ngượng, 'hơi sai sai'",
+    "duration": 1.06,
+    "mean": -30,
+    "peak": -9.1
+  },
+  "aww": {
+    "file": "aww.wav",
+    "base": "aww",
+    "variant": 1,
+    "class": "accent",
+    "use": "'ôi…' tiếc nuối",
+    "duration": 1.47,
+    "mean": -30,
+    "peak": -12.7
+  },
+  "bass-drop": {
+    "file": "bass-drop.wav",
+    "base": "bass-drop",
+    "variant": 1,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 0.86,
+    "mean": -28,
+    "peak": -21.1
+  },
+  "bass-drop-2": {
+    "file": "bass-drop-2.wav",
+    "base": "bass-drop",
+    "variant": 2,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 2,
+    "mean": -28,
+    "peak": -14.7
+  },
+  "bass-drop-3": {
+    "file": "bass-drop-3.wav",
+    "base": "bass-drop",
+    "variant": 3,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 2,
+    "mean": -28,
+    "peak": -19.9
+  },
+  "bass-drop-4": {
+    "file": "bass-drop-4.wav",
+    "base": "bass-drop",
+    "variant": 4,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 1.04,
+    "mean": -28,
+    "peak": -20.8
+  },
+  "bass-drop-5": {
+    "file": "bass-drop-5.wav",
+    "base": "bass-drop",
+    "variant": 5,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 2,
+    "mean": -28,
+    "peak": -19.3
+  },
+  "bass-drop-6": {
+    "file": "bass-drop-6.wav",
+    "base": "bass-drop",
+    "variant": 6,
+    "class": "impact",
+    "use": "lộ kết quả bất ngờ",
+    "duration": 2,
+    "mean": -28,
+    "peak": -22.1
+  },
+  "beep": {
+    "file": "beep.wav",
+    "base": "beep",
+    "variant": 1,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.26,
+    "mean": -31,
+    "peak": -13.4
+  },
+  "beep-2": {
+    "file": "beep-2.wav",
+    "base": "beep",
+    "variant": 2,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 1.18,
+    "mean": -31,
+    "peak": -21
+  },
+  "beep-3": {
+    "file": "beep-3.wav",
+    "base": "beep",
+    "variant": 3,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.28,
+    "mean": -35,
+    "peak": -24.2
+  },
+  "beep-4": {
+    "file": "beep-4.wav",
+    "base": "beep",
+    "variant": 4,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.41,
+    "mean": -31.1,
+    "peak": -14
+  },
+  "beep-5": {
+    "file": "beep-5.wav",
+    "base": "beep",
+    "variant": 5,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.71,
+    "mean": -31,
+    "peak": -16.7
+  },
+  "beep-6": {
+    "file": "beep-6.wav",
+    "base": "beep",
+    "variant": 6,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.54,
+    "mean": -31,
+    "peak": -17.4
+  },
+  "beep-7": {
+    "file": "beep-7.wav",
+    "base": "beep",
+    "variant": 7,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.31,
+    "mean": -31,
+    "peak": -15.6
+  },
+  "beep-8": {
+    "file": "beep-8.wav",
+    "base": "beep",
+    "variant": 8,
+    "class": "ui",
+    "use": "bíp giao diện, đánh dấu mục",
+    "duration": 0.27,
+    "mean": -31.1,
+    "peak": -20.2
+  },
+  "bell": {
+    "file": "bell.wav",
+    "base": "bell",
+    "variant": 1,
+    "class": "accent",
+    "use": "chuông, hết giờ/kết thúc",
+    "duration": 3,
+    "mean": -30,
+    "peak": -14
+  },
+  "boing": {
+    "file": "boing.wav",
+    "base": "boing",
+    "variant": 1,
+    "class": "accent",
+    "use": "bất ngờ kiểu hài",
+    "duration": 0.89,
+    "mean": -30,
+    "peak": -9.8
+  },
+  "boing-2": {
+    "file": "boing-2.wav",
+    "base": "boing",
+    "variant": 2,
+    "class": "accent",
+    "use": "bất ngờ kiểu hài",
+    "duration": 1.2,
+    "mean": -30,
+    "peak": -10.1
+  },
+  "bonk": {
+    "file": "bonk.wav",
+    "base": "bonk",
+    "variant": 1,
+    "class": "impact",
+    "use": "cốc đầu, sai ngớ ngẩn (hài)",
+    "duration": 0.39,
+    "mean": -28.1,
+    "peak": -13.5
+  },
+  "boom-heavy": {
+    "file": "boom-heavy.wav",
+    "base": "boom-heavy",
+    "variant": 1,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -14.7
+  },
+  "boom-heavy-2": {
+    "file": "boom-heavy-2.wav",
+    "base": "boom-heavy",
+    "variant": 2,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -17.7
+  },
+  "boom-heavy-3": {
+    "file": "boom-heavy-3.wav",
+    "base": "boom-heavy",
+    "variant": 3,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -23.2
+  },
+  "boom-heavy-4": {
+    "file": "boom-heavy-4.wav",
+    "base": "boom-heavy",
+    "variant": 4,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -10
+  },
+  "boom-heavy-5": {
+    "file": "boom-heavy-5.wav",
+    "base": "boom-heavy",
+    "variant": 5,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -13.8
+  },
+  "boom-heavy-6": {
+    "file": "boom-heavy-6.wav",
+    "base": "boom-heavy",
+    "variant": 6,
+    "class": "impact",
+    "use": "boom rất mạnh, cú sốc/tiết lộ lớn",
+    "duration": 2,
+    "mean": -28,
+    "peak": -13.6
+  },
+  "bruh": {
+    "file": "bruh.wav",
+    "base": "bruh",
+    "variant": 1,
+    "class": "accent",
+    "use": "'bruh', cạn lời (meme)",
+    "duration": 0.45,
+    "mean": -30.2,
+    "peak": -18.5
+  },
+  "camera": {
+    "file": "camera.wav",
+    "base": "camera",
+    "variant": 1,
+    "class": "ui",
+    "use": "chụp ảnh nhà/căn hộ, chụp màn hình",
+    "duration": 0.16,
+    "mean": -31.4,
+    "peak": -9
+  },
+  "cash": {
+    "file": "cash.wav",
+    "base": "cash",
+    "variant": 1,
+    "class": "accent",
+    "use": "ra số tiền, lợi nhuận",
+    "duration": 0.8,
+    "mean": -30.3,
+    "peak": -8
+  },
+  "cash-2": {
+    "file": "cash-2.wav",
+    "base": "cash",
+    "variant": 2,
+    "class": "accent",
+    "use": "ra số tiền, lợi nhuận",
+    "duration": 2.25,
+    "mean": -30,
+    "peak": -8
+  },
+  "cash-3": {
+    "file": "cash-3.wav",
+    "base": "cash",
+    "variant": 3,
+    "class": "accent",
+    "use": "ra số tiền, lợi nhuận",
+    "duration": 0.93,
+    "mean": -30,
+    "peak": -11.9
+  },
+  "chart-down": {
+    "file": "chart-down.wav",
+    "base": "chart-down",
+    "variant": 1,
+    "class": "accent",
+    "use": "biểu đồ giảm, giá xuống, thua lỗ",
+    "duration": 1.93,
+    "mean": -30,
+    "peak": -22.5
+  },
+  "chart-down-2": {
+    "file": "chart-down-2.wav",
+    "base": "chart-down",
+    "variant": 2,
+    "class": "accent",
+    "use": "biểu đồ giảm, giá xuống, thua lỗ",
+    "duration": 1.07,
+    "mean": -30,
+    "peak": -11.7
+  },
+  "chart-down-3": {
+    "file": "chart-down-3.wav",
+    "base": "chart-down",
+    "variant": 3,
+    "class": "accent",
+    "use": "biểu đồ giảm, giá xuống, thua lỗ",
+    "duration": 0.57,
+    "mean": -30.1,
+    "peak": -8.5
+  },
+  "chart-down-4": {
+    "file": "chart-down-4.wav",
+    "base": "chart-down",
+    "variant": 4,
+    "class": "accent",
+    "use": "biểu đồ giảm, giá xuống, thua lỗ",
+    "duration": 0.95,
+    "mean": -30.3,
+    "peak": -22.6
+  },
+  "chart-down-5": {
+    "file": "chart-down-5.wav",
+    "base": "chart-down",
+    "variant": 5,
+    "class": "accent",
+    "use": "biểu đồ giảm, giá xuống, thua lỗ",
+    "duration": 1.12,
+    "mean": -30,
+    "peak": -19.8
+  },
+  "chart-up": {
+    "file": "chart-up.wav",
+    "base": "chart-up",
+    "variant": 1,
+    "class": "accent",
+    "use": "tăng trưởng, giá tăng",
+    "duration": 1.12,
+    "mean": -30,
+    "peak": -19.6
+  },
+  "chart-up-2": {
+    "file": "chart-up-2.wav",
+    "base": "chart-up",
+    "variant": 2,
+    "class": "accent",
+    "use": "tăng trưởng, giá tăng",
+    "duration": 1.09,
+    "mean": -30,
+    "peak": -12.7
+  },
+  "chart-up-3": {
+    "file": "chart-up-3.wav",
+    "base": "chart-up",
+    "variant": 3,
+    "class": "accent",
+    "use": "tăng trưởng, giá tăng",
+    "duration": 0.74,
+    "mean": -30,
+    "peak": -9.5
+  },
+  "chart-up-4": {
+    "file": "chart-up-4.wav",
+    "base": "chart-up",
+    "variant": 4,
+    "class": "accent",
+    "use": "tăng trưởng, giá tăng",
+    "duration": 0.54,
+    "mean": -30,
+    "peak": -14.7
+  },
+  "chart-up-5": {
+    "file": "chart-up-5.wav",
+    "base": "chart-up",
+    "variant": 5,
+    "class": "accent",
+    "use": "tăng trưởng, giá tăng",
+    "duration": 0.5,
+    "mean": -30,
+    "peak": -13.6
+  },
+  "check": {
+    "file": "check.wav",
+    "base": "check",
+    "variant": 1,
+    "class": "ui",
+    "use": "tích ✓ từng mục checklist",
+    "duration": 0.56,
+    "mean": -31.6,
+    "peak": -9
+  },
+  "check-2": {
+    "file": "check-2.wav",
+    "base": "check",
+    "variant": 2,
+    "class": "ui",
+    "use": "tích ✓ từng mục checklist",
+    "duration": 0.6,
+    "mean": -31,
+    "peak": -12.2
+  },
+  "check-3": {
+    "file": "check-3.wav",
+    "base": "check",
+    "variant": 3,
+    "class": "ui",
+    "use": "tích ✓ từng mục checklist",
+    "duration": 0.53,
+    "mean": -31.1,
+    "peak": -9
+  },
+  "cheer": {
+    "file": "cheer.wav",
+    "base": "cheer",
+    "variant": 1,
+    "class": "accent",
+    "use": "reo hò, ăn mừng",
+    "duration": 3,
+    "mean": -30,
+    "peak": -16.1
+  },
+  "click": {
+    "file": "click.wav",
+    "base": "click",
+    "variant": 1,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.13,
+    "mean": -32,
+    "peak": -10.2
+  },
+  "click-2": {
+    "file": "click-2.wav",
+    "base": "click",
+    "variant": 2,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.14,
+    "mean": -34.6,
+    "peak": -9
+  },
+  "click-3": {
+    "file": "click-3.wav",
+    "base": "click",
+    "variant": 3,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.23,
+    "mean": -34.4,
+    "peak": -9.5
+  },
+  "click-4": {
+    "file": "click-4.wav",
+    "base": "click",
+    "variant": 4,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.17,
+    "mean": -31,
+    "peak": -12.2
+  },
+  "click-5": {
+    "file": "click-5.wav",
+    "base": "click",
+    "variant": 5,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.09,
+    "mean": -31,
+    "peak": -13.6
+  },
+  "click-6": {
+    "file": "click-6.wav",
+    "base": "click",
+    "variant": 6,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.11,
+    "mean": -33.8,
+    "peak": -11.6
+  },
+  "click-7": {
+    "file": "click-7.wav",
+    "base": "click",
+    "variant": 7,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.19,
+    "mean": -33.3,
+    "peak": -9
+  },
+  "click-8": {
+    "file": "click-8.wav",
+    "base": "click",
+    "variant": 8,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.08,
+    "mean": -31.1,
+    "peak": -14.9
+  },
+  "click-9": {
+    "file": "click-9.wav",
+    "base": "click",
+    "variant": 9,
+    "class": "ui",
+    "use": "nhấn, chọn mục",
+    "duration": 0.18,
+    "mean": -31.1,
+    "peak": -12.4
+  },
+  "coin": {
+    "file": "coin.wav",
+    "base": "coin",
+    "variant": 1,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.43,
+    "mean": -30,
+    "peak": -9.3
+  },
+  "coin-2": {
+    "file": "coin-2.wav",
+    "base": "coin",
+    "variant": 2,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.77,
+    "mean": -30.1,
+    "peak": -17.4
+  },
+  "coin-3": {
+    "file": "coin-3.wav",
+    "base": "coin",
+    "variant": 3,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.88,
+    "mean": -30,
+    "peak": -9.7
+  },
+  "coin-4": {
+    "file": "coin-4.wav",
+    "base": "coin",
+    "variant": 4,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.95,
+    "mean": -30,
+    "peak": -17.7
+  },
+  "coin-5": {
+    "file": "coin-5.wav",
+    "base": "coin",
+    "variant": 5,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.15,
+    "mean": -30.2,
+    "peak": -9.1
+  },
+  "coin-6": {
+    "file": "coin-6.wav",
+    "base": "coin",
+    "variant": 6,
+    "class": "accent",
+    "use": "tiết kiệm, tiền lẻ",
+    "duration": 0.25,
+    "mean": -30,
+    "peak": -8.5
+  },
+  "coin-shake": {
+    "file": "coin-shake.wav",
+    "base": "coin-shake",
+    "variant": 1,
+    "class": "accent",
+    "use": "lắc ống heo, tích lũy tiền",
+    "duration": 0.59,
+    "mean": -30.1,
+    "peak": -9.1
+  },
+  "coin-shake-2": {
+    "file": "coin-shake-2.wav",
+    "base": "coin-shake",
+    "variant": 2,
+    "class": "accent",
+    "use": "lắc ống heo, tích lũy tiền",
+    "duration": 0.88,
+    "mean": -30.3,
+    "peak": -8
+  },
+  "confetti": {
+    "file": "confetti.wav",
+    "base": "confetti",
+    "variant": 1,
+    "class": "accent",
+    "use": "chúc mừng, chốt deal thành công",
+    "duration": 1.14,
+    "mean": -30,
+    "peak": -15.6
+  },
+  "confirm": {
+    "file": "confirm.wav",
+    "base": "confirm",
+    "variant": 1,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.47,
+    "mean": -31,
+    "peak": -15.9
+  },
+  "confirm-2": {
+    "file": "confirm-2.wav",
+    "base": "confirm",
+    "variant": 2,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.65,
+    "mean": -31,
+    "peak": -19.2
+  },
+  "confirm-3": {
+    "file": "confirm-3.wav",
+    "base": "confirm",
+    "variant": 3,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.21,
+    "mean": -31,
+    "peak": -16.1
+  },
+  "confirm-4": {
+    "file": "confirm-4.wav",
+    "base": "confirm",
+    "variant": 4,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.59,
+    "mean": -31,
+    "peak": -16.9
+  },
+  "confirm-5": {
+    "file": "confirm-5.wav",
+    "base": "confirm",
+    "variant": 5,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.37,
+    "mean": -31.3,
+    "peak": -11.5
+  },
+  "confirm-6": {
+    "file": "confirm-6.wav",
+    "base": "confirm",
+    "variant": 6,
+    "class": "ui",
+    "use": "xác nhận, chọn đáp án",
+    "duration": 0.21,
+    "mean": -31.3,
+    "peak": -15.2
+  },
+  "counter-roll": {
+    "file": "counter-roll.wav",
+    "base": "counter-roll",
+    "variant": 1,
+    "class": "ui",
+    "use": "số đếm chạy lên (count-up)",
+    "duration": 0.49,
+    "mean": -31.1,
+    "peak": -10.6
+  },
+  "counter-roll-2": {
+    "file": "counter-roll-2.wav",
+    "base": "counter-roll",
+    "variant": 2,
+    "class": "ui",
+    "use": "số đếm chạy lên (count-up)",
+    "duration": 0.45,
+    "mean": -31.6,
+    "peak": -10.5
+  },
+  "counter-roll-3": {
+    "file": "counter-roll-3.wav",
+    "base": "counter-roll",
+    "variant": 3,
+    "class": "ui",
+    "use": "số đếm chạy lên (count-up)",
+    "duration": 0.49,
+    "mean": -31.5,
+    "peak": -16.6
+  },
+  "counter-roll-4": {
+    "file": "counter-roll-4.wav",
+    "base": "counter-roll",
+    "variant": 4,
+    "class": "ui",
+    "use": "số đếm chạy lên (count-up)",
+    "duration": 0.21,
+    "mean": -31.1,
+    "peak": -12.7
+  },
+  "counter-roll-5": {
+    "file": "counter-roll-5.wav",
+    "base": "counter-roll",
+    "variant": 5,
+    "class": "ui",
+    "use": "số đếm chạy lên (count-up)",
+    "duration": 0.3,
+    "mean": -31,
+    "peak": -13
+  },
+  "creak": {
+    "file": "creak.wav",
+    "base": "creak",
+    "variant": 1,
+    "class": "accent",
+    "use": "cửa/sàn kẽo kẹt, nhà cũ xuống cấp",
+    "duration": 0.77,
+    "mean": -30.5,
+    "peak": -8
+  },
+  "creak-2": {
+    "file": "creak-2.wav",
+    "base": "creak",
+    "variant": 2,
+    "class": "accent",
+    "use": "kẽo kẹt, cũ kỹ, xuống cấp",
+    "duration": 1.2,
+    "mean": -30.3,
+    "peak": -9.9
+  },
+  "creak-3": {
+    "file": "creak-3.wav",
+    "base": "creak",
+    "variant": 3,
+    "class": "accent",
+    "use": "kẽo kẹt, cũ kỹ, xuống cấp",
+    "duration": 0.31,
+    "mean": -30.7,
+    "peak": -8.3
+  },
+  "crickets": {
+    "file": "crickets.wav",
+    "base": "crickets",
+    "variant": 1,
+    "class": "ambience",
+    "use": "im lặng ngượng ngùng",
+    "duration": 4,
+    "mean": -36,
+    "peak": -20.7
+  },
+  "crowd-chatter": {
+    "file": "crowd-chatter.wav",
+    "base": "crowd-chatter",
+    "variant": 1,
+    "class": "bed",
+    "use": "nền quán đông người",
+    "duration": 15,
+    "mean": -40.4,
+    "peak": -24
+  },
+  "crumple": {
+    "file": "crumple.wav",
+    "base": "crumple",
+    "variant": 1,
+    "class": "accent",
+    "use": "vò giấy, gạt bỏ phương án",
+    "duration": 0.45,
+    "mean": -33.2,
+    "peak": -8
+  },
+  "crumple-2": {
+    "file": "crumple-2.wav",
+    "base": "crumple",
+    "variant": 2,
+    "class": "accent",
+    "use": "vò giấy, gạt bỏ phương án",
+    "duration": 0.64,
+    "mean": -31.1,
+    "peak": -8
+  },
+  "cymbal": {
+    "file": "cymbal.wav",
+    "base": "cymbal",
+    "variant": 1,
+    "class": "impact",
+    "use": "chốt câu cuối, ta-da",
+    "duration": 1.76,
+    "mean": -28,
+    "peak": -8.3
+  },
+  "cymbal-2": {
+    "file": "cymbal-2.wav",
+    "base": "cymbal",
+    "variant": 2,
+    "class": "impact",
+    "use": "chốt câu cuối, ta-da",
+    "duration": 1.16,
+    "mean": -28,
+    "peak": -9.6
+  },
+  "cymbal-3": {
+    "file": "cymbal-3.wav",
+    "base": "cymbal",
+    "variant": 3,
+    "class": "impact",
+    "use": "chốt câu cuối, ta-da",
+    "duration": 0.86,
+    "mean": -28.1,
+    "peak": -13.9
+  },
+  "ding-idea": {
+    "file": "ding-idea.wav",
+    "base": "ding-idea",
+    "variant": 1,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 1.05,
+    "mean": -30,
+    "peak": -14.6
+  },
+  "ding-idea-2": {
+    "file": "ding-idea-2.wav",
+    "base": "ding-idea",
+    "variant": 2,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 1.25,
+    "mean": -30,
+    "peak": -17.3
+  },
+  "ding-idea-3": {
+    "file": "ding-idea-3.wav",
+    "base": "ding-idea",
+    "variant": 3,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 0.87,
+    "mean": -30,
+    "peak": -12.3
+  },
+  "ding-idea-4": {
+    "file": "ding-idea-4.wav",
+    "base": "ding-idea",
+    "variant": 4,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 1.08,
+    "mean": -30,
+    "peak": -14.3
+  },
+  "ding-idea-5": {
+    "file": "ding-idea-5.wav",
+    "base": "ding-idea",
+    "variant": 5,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 0.5,
+    "mean": -30,
+    "peak": -16.5
+  },
+  "ding-idea-6": {
+    "file": "ding-idea-6.wav",
+    "base": "ding-idea",
+    "variant": 6,
+    "class": "accent",
+    "use": "ý tưởng, mẹo, 'à ra vậy'",
+    "duration": 0.5,
+    "mean": -30,
+    "peak": -15.7
+  },
+  "doink": {
+    "file": "doink.wav",
+    "base": "doink",
+    "variant": 1,
+    "class": "accent",
+    "use": "ngớ ngẩn nhẹ, hài",
+    "duration": 0.36,
+    "mean": -30,
+    "peak": -18.9
+  },
+  "door-open": {
+    "file": "door-open.wav",
+    "base": "door-open",
+    "variant": 1,
+    "class": "accent",
+    "use": "mở cửa, vào nhà",
+    "duration": 0.91,
+    "mean": -31.4,
+    "peak": -8
+  },
+  "door-slam": {
+    "file": "door-slam.wav",
+    "base": "door-slam",
+    "variant": 1,
+    "class": "impact",
+    "use": "chốt, đóng lại",
+    "duration": 0.53,
+    "mean": -28,
+    "peak": -9.9
+  },
+  "dun-dun": {
+    "file": "dun-dun.wav",
+    "base": "dun-dun",
+    "variant": 1,
+    "class": "accent",
+    "use": "'tèn ten', kịch tính, phát hiện điều bất ngờ",
+    "duration": 2.28,
+    "mean": -30,
+    "peak": -14.5
+  },
+  "error-soft": {
+    "file": "error-soft.wav",
+    "base": "error-soft",
+    "variant": 1,
+    "class": "accent",
+    "use": "ý sai, tụt, tiêu cực (nhẹ hơn wrong-buzzer)",
+    "duration": 0.52,
+    "mean": -30.7,
+    "peak": -14.3
+  },
+  "error-soft-2": {
+    "file": "error-soft-2.wav",
+    "base": "error-soft",
+    "variant": 2,
+    "class": "accent",
+    "use": "ý sai, tụt, tiêu cực (nhẹ hơn wrong-buzzer)",
+    "duration": 0.47,
+    "mean": -30.8,
+    "peak": -13.1
+  },
+  "error-soft-3": {
+    "file": "error-soft-3.wav",
+    "base": "error-soft",
+    "variant": 3,
+    "class": "accent",
+    "use": "ý sai, tụt, tiêu cực (nhẹ hơn wrong-buzzer)",
+    "duration": 0.34,
+    "mean": -30.1,
+    "peak": -12.9
+  },
+  "fall": {
+    "file": "fall.wav",
+    "base": "fall",
+    "variant": 1,
+    "class": "accent",
+    "use": "rơi xuống, giá giảm",
+    "duration": 1.88,
+    "mean": -30.2,
+    "peak": -14.6
+  },
+  "fall-2": {
+    "file": "fall-2.wav",
+    "base": "fall",
+    "variant": 2,
+    "class": "accent",
+    "use": "rơi xuống, giá giảm",
+    "duration": 2.38,
+    "mean": -30.1,
+    "peak": -11.6
+  },
+  "fall-3": {
+    "file": "fall-3.wav",
+    "base": "fall",
+    "variant": 3,
+    "class": "accent",
+    "use": "rơi xuống, giá giảm",
+    "duration": 0.24,
+    "mean": -31.1,
+    "peak": -19.7
+  },
+  "gasp": {
+    "file": "gasp.wav",
+    "base": "gasp",
+    "variant": 1,
+    "class": "accent",
+    "use": "bất ngờ",
+    "duration": 0.63,
+    "mean": -30.3,
+    "peak": -10.5
+  },
+  "glass-break": {
+    "file": "glass-break.wav",
+    "base": "glass-break",
+    "variant": 1,
+    "class": "impact",
+    "use": "đổ vỡ, vỡ mộng",
+    "duration": 2,
+    "mean": -28.2,
+    "peak": -6
+  },
+  "glitch": {
+    "file": "glitch.wav",
+    "base": "glitch",
+    "variant": 1,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 0.93,
+    "mean": -30,
+    "peak": -9.9
+  },
+  "glitch-2": {
+    "file": "glitch-2.wav",
+    "base": "glitch",
+    "variant": 2,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 0.66,
+    "mean": -30.1,
+    "peak": -10.6
+  },
+  "glitch-3": {
+    "file": "glitch-3.wav",
+    "base": "glitch",
+    "variant": 3,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 1.05,
+    "mean": -30.8,
+    "peak": -8
+  },
+  "glitch-4": {
+    "file": "glitch-4.wav",
+    "base": "glitch",
+    "variant": 4,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 0.68,
+    "mean": -32.4,
+    "peak": -8
+  },
+  "glitch-5": {
+    "file": "glitch-5.wav",
+    "base": "glitch",
+    "variant": 5,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 0.27,
+    "mean": -30,
+    "peak": -15.1
+  },
+  "glitch-6": {
+    "file": "glitch-6.wav",
+    "base": "glitch",
+    "variant": 6,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 1.16,
+    "mean": -30,
+    "peak": -19.8
+  },
+  "glitch-7": {
+    "file": "glitch-7.wav",
+    "base": "glitch",
+    "variant": 7,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 1.44,
+    "mean": -30.1,
+    "peak": -20
+  },
+  "glitch-8": {
+    "file": "glitch-8.wav",
+    "base": "glitch",
+    "variant": 8,
+    "class": "transition",
+    "use": "nhiễu/lỗi, tin giả, chuyển cảnh giật",
+    "duration": 0.59,
+    "mean": -30,
+    "peak": -8.7
+  },
+  "gong": {
+    "file": "gong.wav",
+    "base": "gong",
+    "variant": 1,
+    "class": "accent",
+    "use": "cồng, chốt mạnh/khai trương",
+    "duration": 3,
+    "mean": -30,
+    "peak": -12.1
+  },
+  "hang-up": {
+    "file": "hang-up.wav",
+    "base": "hang-up",
+    "variant": 1,
+    "class": "ui",
+    "use": "cúp máy",
+    "duration": 0.23,
+    "mean": -31.4,
+    "peak": -23.3
+  },
+  "hang-up-2": {
+    "file": "hang-up-2.wav",
+    "base": "hang-up",
+    "variant": 2,
+    "class": "ui",
+    "use": "cúp máy",
+    "duration": 0.59,
+    "mean": -31.5,
+    "peak": -24.8
+  },
+  "heartbeat": {
+    "file": "heartbeat.wav",
+    "base": "heartbeat",
+    "variant": 1,
+    "class": "ambience",
+    "use": "hồi hộp, lo lắng",
+    "duration": 4,
+    "mean": -36,
+    "peak": -21.4
+  },
+  "hit": {
+    "file": "hit.wav",
+    "base": "hit",
+    "variant": 1,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -20.7
+  },
+  "hit-2": {
+    "file": "hit-2.wav",
+    "base": "hit",
+    "variant": 2,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -9.4
+  },
+  "hit-3": {
+    "file": "hit-3.wav",
+    "base": "hit",
+    "variant": 3,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -7.3
+  },
+  "hit-4": {
+    "file": "hit-4.wav",
+    "base": "hit",
+    "variant": 4,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -11.3
+  },
+  "hit-5": {
+    "file": "hit-5.wav",
+    "base": "hit",
+    "variant": 5,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -15
+  },
+  "hit-6": {
+    "file": "hit-6.wav",
+    "base": "hit",
+    "variant": 6,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -14.9
+  },
+  "hit-7": {
+    "file": "hit-7.wav",
+    "base": "hit",
+    "variant": 7,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 1.07,
+    "mean": -28,
+    "peak": -11.6
+  },
+  "hit-8": {
+    "file": "hit-8.wav",
+    "base": "hit",
+    "variant": 8,
+    "class": "impact",
+    "use": "hook, câu chốt",
+    "duration": 2,
+    "mean": -28,
+    "peak": -10.4
+  },
+  "jackpot": {
+    "file": "jackpot.wav",
+    "base": "jackpot",
+    "variant": 1,
+    "class": "accent",
+    "use": "trúng lớn, lãi đậm",
+    "duration": 1.67,
+    "mean": -30,
+    "peak": -17
+  },
+  "knock": {
+    "file": "knock.wav",
+    "base": "knock",
+    "variant": 1,
+    "class": "accent",
+    "use": "gõ cửa, ghé xem nhà",
+    "duration": 0.74,
+    "mean": -32,
+    "peak": -8
+  },
+  "knock-2": {
+    "file": "knock-2.wav",
+    "base": "knock",
+    "variant": 2,
+    "class": "accent",
+    "use": "gõ cửa, ghé thăm",
+    "duration": 0.08,
+    "mean": -30.1,
+    "peak": -13.9
+  },
+  "knock-3": {
+    "file": "knock-3.wav",
+    "base": "knock",
+    "variant": 3,
+    "class": "accent",
+    "use": "gõ cửa, ghé thăm",
+    "duration": 0.14,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "knock-4": {
+    "file": "knock-4.wav",
+    "base": "knock",
+    "variant": 4,
+    "class": "accent",
+    "use": "gõ cửa, ghé thăm",
+    "duration": 0.12,
+    "mean": -30.1,
+    "peak": -17.3
+  },
+  "like": {
+    "file": "like.wav",
+    "base": "like",
+    "variant": 1,
+    "class": "ui",
+    "use": "tương tác mạng xã hội",
+    "duration": 0.2,
+    "mean": -31,
+    "peak": -13.8
+  },
+  "line-draw": {
+    "file": "line-draw.wav",
+    "base": "line-draw",
+    "variant": 1,
+    "class": "accent",
+    "use": "vẽ đường/viền chạy dài trên bản đồ",
+    "duration": 1.86,
+    "mean": -30,
+    "peak": -13.1
+  },
+  "line-draw-2": {
+    "file": "line-draw-2.wav",
+    "base": "line-draw",
+    "variant": 2,
+    "class": "accent",
+    "use": "vẽ đường/viền chạy dài trên bản đồ",
+    "duration": 0.95,
+    "mean": -30.2,
+    "peak": -15.4
+  },
+  "lock": {
+    "file": "lock.wav",
+    "base": "lock",
+    "variant": 1,
+    "class": "ui",
+    "use": "khóa, bảo vệ",
+    "duration": 0.33,
+    "mean": -31.6,
+    "peak": -9
+  },
+  "lock-2": {
+    "file": "lock-2.wav",
+    "base": "lock",
+    "variant": 2,
+    "class": "ui",
+    "use": "khóa, bảo vệ",
+    "duration": 1.04,
+    "mean": -31.7,
+    "peak": -9
+  },
+  "lock-3": {
+    "file": "lock-3.wav",
+    "base": "lock",
+    "variant": 3,
+    "class": "ui",
+    "use": "khóa, bảo vệ",
+    "duration": 0.54,
+    "mean": -32.3,
+    "peak": -9
+  },
+  "lose": {
+    "file": "lose.wav",
+    "base": "lose",
+    "variant": 1,
+    "class": "accent",
+    "use": "thua lỗ, kết quả tệ",
+    "duration": 2.12,
+    "mean": -30,
+    "peak": -17.3
+  },
+  "meter": {
+    "file": "meter.wav",
+    "base": "meter",
+    "variant": 1,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.7,
+    "mean": -31.1,
+    "peak": -14.2
+  },
+  "meter-2": {
+    "file": "meter-2.wav",
+    "base": "meter",
+    "variant": 2,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.44,
+    "mean": -31.6,
+    "peak": -14.6
+  },
+  "meter-3": {
+    "file": "meter-3.wav",
+    "base": "meter",
+    "variant": 3,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.56,
+    "mean": -31.1,
+    "peak": -13.4
+  },
+  "meter-4": {
+    "file": "meter-4.wav",
+    "base": "meter",
+    "variant": 4,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.29,
+    "mean": -31.4,
+    "peak": -16.5
+  },
+  "meter-5": {
+    "file": "meter-5.wav",
+    "base": "meter",
+    "variant": 5,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.39,
+    "mean": -32.1,
+    "peak": -15.9
+  },
+  "meter-6": {
+    "file": "meter-6.wav",
+    "base": "meter",
+    "variant": 6,
+    "class": "ui",
+    "use": "số bắt đầu chạy, thanh đo bắt đầu lên",
+    "duration": 0.38,
+    "mean": -33.1,
+    "peak": -18.4
+  },
+  "neon-on": {
+    "file": "neon-on.wav",
+    "base": "neon-on",
+    "variant": 1,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 3,
+    "mean": -30,
+    "peak": -14.3
+  },
+  "neon-on-2": {
+    "file": "neon-on-2.wav",
+    "base": "neon-on",
+    "variant": 2,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 0.54,
+    "mean": -30.6,
+    "peak": -9.4
+  },
+  "neon-on-3": {
+    "file": "neon-on-3.wav",
+    "base": "neon-on",
+    "variant": 3,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 3,
+    "mean": -30,
+    "peak": -15.4
+  },
+  "neon-on-4": {
+    "file": "neon-on-4.wav",
+    "base": "neon-on",
+    "variant": 4,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 2.81,
+    "mean": -30,
+    "peak": -8.1
+  },
+  "neon-on-5": {
+    "file": "neon-on-5.wav",
+    "base": "neon-on",
+    "variant": 5,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 1.31,
+    "mean": -32.2,
+    "peak": -8
+  },
+  "neon-on-6": {
+    "file": "neon-on-6.wav",
+    "base": "neon-on",
+    "variant": 6,
+    "class": "accent",
+    "use": "viền neon bật sáng, tô vùng trên bản đồ",
+    "duration": 2.16,
+    "mean": -30,
+    "peak": -16.2
+  },
+  "notify": {
+    "file": "notify.wav",
+    "base": "notify",
+    "variant": 1,
+    "class": "ui",
+    "use": "tin nhắn/thông báo đến",
+    "duration": 0.62,
+    "mean": -31,
+    "peak": -19.9
+  },
+  "notify-2": {
+    "file": "notify-2.wav",
+    "base": "notify",
+    "variant": 2,
+    "class": "ui",
+    "use": "tin nhắn/thông báo đến",
+    "duration": 1.12,
+    "mean": -31,
+    "peak": -10.1
+  },
+  "notify-3": {
+    "file": "notify-3.wav",
+    "base": "notify",
+    "variant": 3,
+    "class": "ui",
+    "use": "tin nhắn/thông báo đến",
+    "duration": 0.65,
+    "mean": -31,
+    "peak": -10.6
+  },
+  "oops": {
+    "file": "oops.wav",
+    "base": "oops",
+    "variant": 1,
+    "class": "accent",
+    "use": "sai lầm, 'chết rồi' (hài)",
+    "duration": 1.2,
+    "mean": -30,
+    "peak": -10.1
+  },
+  "open": {
+    "file": "open.wav",
+    "base": "open",
+    "variant": 1,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.29,
+    "mean": -31.1,
+    "peak": -8
+  },
+  "open-2": {
+    "file": "open-2.wav",
+    "base": "open",
+    "variant": 2,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.27,
+    "mean": -33.1,
+    "peak": -11.2
+  },
+  "open-3": {
+    "file": "open-3.wav",
+    "base": "open",
+    "variant": 3,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.32,
+    "mean": -30.1,
+    "peak": -14.4
+  },
+  "open-4": {
+    "file": "open-4.wav",
+    "base": "open",
+    "variant": 4,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.42,
+    "mean": -31.2,
+    "peak": -8
+  },
+  "open-5": {
+    "file": "open-5.wav",
+    "base": "open",
+    "variant": 5,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.34,
+    "mean": -31.1,
+    "peak": -8.8
+  },
+  "open-6": {
+    "file": "open-6.wav",
+    "base": "open",
+    "variant": 6,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.44,
+    "mean": -30.7,
+    "peak": -13
+  },
+  "open-7": {
+    "file": "open-7.wav",
+    "base": "open",
+    "variant": 7,
+    "class": "accent",
+    "use": "thẻ chính, khung nhấn mạnh, chữ chốt hiện ra",
+    "duration": 0.39,
+    "mean": -30.7,
+    "peak": -8
+  },
+  "page-turn": {
+    "file": "page-turn.wav",
+    "base": "page-turn",
+    "variant": 1,
+    "class": "transition",
+    "use": "lật trang, sang ý mới",
+    "duration": 0.51,
+    "mean": -30.1,
+    "peak": -12
+  },
+  "page-turn-2": {
+    "file": "page-turn-2.wav",
+    "base": "page-turn",
+    "variant": 2,
+    "class": "transition",
+    "use": "lật trang, sang ý mới",
+    "duration": 0.65,
+    "mean": -30.7,
+    "peak": -8.9
+  },
+  "page-turn-3": {
+    "file": "page-turn-3.wav",
+    "base": "page-turn",
+    "variant": 3,
+    "class": "transition",
+    "use": "lật trang, sang ý mới",
+    "duration": 0.27,
+    "mean": -33.9,
+    "peak": -8
+  },
+  "page-turn-4": {
+    "file": "page-turn-4.wav",
+    "base": "page-turn",
+    "variant": 4,
+    "class": "transition",
+    "use": "lật trang, sang ý mới",
+    "duration": 0.41,
+    "mean": -30.2,
+    "peak": -8.6
+  },
+  "page-turn-5": {
+    "file": "page-turn-5.wav",
+    "base": "page-turn",
+    "variant": 5,
+    "class": "transition",
+    "use": "lật trang, sang ý mới",
+    "duration": 0.31,
+    "mean": -34.4,
+    "peak": -8.6
+  },
+  "paper-rustle": {
+    "file": "paper-rustle.wav",
+    "base": "paper-rustle",
+    "variant": 1,
+    "class": "accent",
+    "use": "giấy tờ, hợp đồng",
+    "duration": 0.82,
+    "mean": -30.1,
+    "peak": -9.9
+  },
+  "paper-rustle-2": {
+    "file": "paper-rustle-2.wav",
+    "base": "paper-rustle",
+    "variant": 2,
+    "class": "accent",
+    "use": "giấy tờ, hợp đồng, pháp lý",
+    "duration": 0.3,
+    "mean": -30.5,
+    "peak": -8.2
+  },
+  "paper-rustle-3": {
+    "file": "paper-rustle-3.wav",
+    "base": "paper-rustle",
+    "variant": 3,
+    "class": "accent",
+    "use": "giấy tờ, hợp đồng, pháp lý",
+    "duration": 0.27,
+    "mean": -32.8,
+    "peak": -11
+  },
+  "paper-tear": {
+    "file": "paper-tear.wav",
+    "base": "paper-tear",
+    "variant": 1,
+    "class": "accent",
+    "use": "xé giấy, hủy hợp đồng/cọc",
+    "duration": 0.22,
+    "mean": -32.4,
+    "peak": -11.3
+  },
+  "pen-click": {
+    "file": "pen-click.wav",
+    "base": "pen-click",
+    "variant": 1,
+    "class": "ui",
+    "use": "bấm bút, ký hợp đồng",
+    "duration": 0.12,
+    "mean": -35.7,
+    "peak": -9
+  },
+  "pen-click-2": {
+    "file": "pen-click-2.wav",
+    "base": "pen-click",
+    "variant": 2,
+    "class": "ui",
+    "use": "bấm bút, ký hợp đồng",
+    "duration": 0.02,
+    "mean": -31,
+    "peak": -13.4
+  },
+  "pen-click-3": {
+    "file": "pen-click-3.wav",
+    "base": "pen-click",
+    "variant": 3,
+    "class": "ui",
+    "use": "bấm bút, ký hợp đồng",
+    "duration": 0.16,
+    "mean": -36.5,
+    "peak": -9
+  },
+  "pen-click-4": {
+    "file": "pen-click-4.wav",
+    "base": "pen-click",
+    "variant": 4,
+    "class": "ui",
+    "use": "bấm bút, ký hợp đồng",
+    "duration": 0.11,
+    "mean": -36.9,
+    "peak": -9
+  },
+  "phone-ring": {
+    "file": "phone-ring.wav",
+    "base": "phone-ring",
+    "variant": 1,
+    "class": "accent",
+    "use": "chuông điện thoại reo",
+    "duration": 1.03,
+    "mean": -30.3,
+    "peak": -20.7
+  },
+  "phone-ring-2": {
+    "file": "phone-ring-2.wav",
+    "base": "phone-ring",
+    "variant": 2,
+    "class": "accent",
+    "use": "chuông điện thoại reo",
+    "duration": 3,
+    "mean": -30,
+    "peak": -22.1
+  },
+  "phone-vibrate": {
+    "file": "phone-vibrate.wav",
+    "base": "phone-vibrate",
+    "variant": 1,
+    "class": "accent",
+    "use": "điện thoại rung, áp lực",
+    "duration": 1.64,
+    "mean": -30,
+    "peak": -20.1
+  },
+  "pin-drop": {
+    "file": "pin-drop.wav",
+    "base": "pin-drop",
+    "variant": 1,
+    "class": "ui",
+    "use": "ghim định vị cắm xuống bản đồ",
+    "duration": 0.16,
+    "mean": -31.8,
+    "peak": -29.1
+  },
+  "pin-drop-2": {
+    "file": "pin-drop-2.wav",
+    "base": "pin-drop",
+    "variant": 2,
+    "class": "ui",
+    "use": "ghim định vị cắm xuống bản đồ",
+    "duration": 0.2,
+    "mean": -32.4,
+    "peak": -25
+  },
+  "pin-drop-3": {
+    "file": "pin-drop-3.wav",
+    "base": "pin-drop",
+    "variant": 3,
+    "class": "ui",
+    "use": "ghim định vị cắm xuống bản đồ",
+    "duration": 0.18,
+    "mean": -31,
+    "peak": -19
+  },
+  "pop": {
+    "file": "pop.wav",
+    "base": "pop",
+    "variant": 1,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.09,
+    "mean": -31,
+    "peak": -19.1
+  },
+  "pop-2": {
+    "file": "pop-2.wav",
+    "base": "pop",
+    "variant": 2,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.23,
+    "mean": -31,
+    "peak": -15.3
+  },
+  "pop-3": {
+    "file": "pop-3.wav",
+    "base": "pop",
+    "variant": 3,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.08,
+    "mean": -31,
+    "peak": -19.8
+  },
+  "pop-4": {
+    "file": "pop-4.wav",
+    "base": "pop",
+    "variant": 4,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.09,
+    "mean": -31,
+    "peak": -17
+  },
+  "pop-5": {
+    "file": "pop-5.wav",
+    "base": "pop",
+    "variant": 5,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.11,
+    "mean": -31.2,
+    "peak": -14.2
+  },
+  "pop-6": {
+    "file": "pop-6.wav",
+    "base": "pop",
+    "variant": 6,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.12,
+    "mean": -33,
+    "peak": -16.8
+  },
+  "pop-7": {
+    "file": "pop-7.wav",
+    "base": "pop",
+    "variant": 7,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.24,
+    "mean": -32.9,
+    "peak": -15.9
+  },
+  "pop-8": {
+    "file": "pop-8.wav",
+    "base": "pop",
+    "variant": 8,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.15,
+    "mean": -33.1,
+    "peak": -11.1
+  },
+  "pop-9": {
+    "file": "pop-9.wav",
+    "base": "pop",
+    "variant": 9,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.42,
+    "mean": -31,
+    "peak": -10.2
+  },
+  "pop-10": {
+    "file": "pop-10.wav",
+    "base": "pop",
+    "variant": 10,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.2,
+    "mean": -31,
+    "peak": -14.5
+  },
+  "pop-11": {
+    "file": "pop-11.wav",
+    "base": "pop",
+    "variant": 11,
+    "class": "ui",
+    "use": "thẻ/chip/icon bật ra",
+    "duration": 0.39,
+    "mean": -31,
+    "peak": -18.2
+  },
+  "pop-multi": {
+    "file": "pop-multi.wav",
+    "base": "pop-multi",
+    "variant": 1,
+    "class": "ui",
+    "use": "nhiều chip/icon bật ra liên tiếp",
+    "duration": 0.36,
+    "mean": -38.6,
+    "peak": -9
+  },
+  "pop-multi-2": {
+    "file": "pop-multi-2.wav",
+    "base": "pop-multi",
+    "variant": 2,
+    "class": "ui",
+    "use": "nhiều chip/icon bật ra liên tiếp",
+    "duration": 0.16,
+    "mean": -35.9,
+    "peak": -9
+  },
+  "pop-multi-3": {
+    "file": "pop-multi-3.wav",
+    "base": "pop-multi",
+    "variant": 3,
+    "class": "ui",
+    "use": "nhiều chip/icon bật ra liên tiếp",
+    "duration": 0.18,
+    "mean": -40.4,
+    "peak": -9
+  },
+  "punch": {
+    "file": "punch.wav",
+    "base": "punch",
+    "variant": 1,
+    "class": "impact",
+    "use": "chữ đập vào khung",
+    "duration": 0.54,
+    "mean": -28,
+    "peak": -13.5
+  },
+  "question": {
+    "file": "question.wav",
+    "base": "question",
+    "variant": 1,
+    "class": "accent",
+    "use": "'ủa?', thắc mắc",
+    "duration": 0.49,
+    "mean": -30.1,
+    "peak": -15.1
+  },
+  "receipt": {
+    "file": "receipt.wav",
+    "base": "receipt",
+    "variant": 1,
+    "class": "accent",
+    "use": "hóa đơn in ra",
+    "duration": 1.77,
+    "mean": -30.1,
+    "peak": -8.9
+  },
+  "record-scratch": {
+    "file": "record-scratch.wav",
+    "base": "record-scratch",
+    "variant": 1,
+    "class": "accent",
+    "use": "khựng lại, 'khoan đã'",
+    "duration": 0.81,
+    "mean": -30,
+    "peak": -21
+  },
+  "reveal": {
+    "file": "reveal.wav",
+    "base": "reveal",
+    "variant": 1,
+    "class": "transition",
+    "use": "lộ hình/ảnh căn nhà",
+    "duration": 1.6,
+    "mean": -30,
+    "peak": -13.3
+  },
+  "reveal-2": {
+    "file": "reveal-2.wav",
+    "base": "reveal",
+    "variant": 2,
+    "class": "transition",
+    "use": "lộ hình, mở ảnh minh họa",
+    "duration": 0.53,
+    "mean": -30.1,
+    "peak": -9.2
+  },
+  "reveal-3": {
+    "file": "reveal-3.wav",
+    "base": "reveal",
+    "variant": 3,
+    "class": "transition",
+    "use": "lộ hình, mở ảnh minh họa",
+    "duration": 1.6,
+    "mean": -30,
+    "peak": -13
+  },
+  "reward": {
+    "file": "reward.wav",
+    "base": "reward",
+    "variant": 1,
+    "class": "accent",
+    "use": "phần thưởng, ưu đãi, quà tặng",
+    "duration": 0.53,
+    "mean": -30,
+    "peak": -15.8
+  },
+  "reward-2": {
+    "file": "reward-2.wav",
+    "base": "reward",
+    "variant": 2,
+    "class": "accent",
+    "use": "phần thưởng, ưu đãi, quà tặng",
+    "duration": 0.94,
+    "mean": -30,
+    "peak": -15.4
+  },
+  "reward-3": {
+    "file": "reward-3.wav",
+    "base": "reward",
+    "variant": 3,
+    "class": "accent",
+    "use": "phần thưởng, ưu đãi, quà tặng",
+    "duration": 1.04,
+    "mean": -30,
+    "peak": -14.9
+  },
+  "rewind": {
+    "file": "rewind.wav",
+    "base": "rewind",
+    "variant": 1,
+    "class": "accent",
+    "use": "tua lại, quay về quá khứ/giá năm xưa",
+    "duration": 1.06,
+    "mean": -30,
+    "peak": -15.8
+  },
+  "riser": {
+    "file": "riser.wav",
+    "base": "riser",
+    "variant": 1,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 1.52,
+    "mean": -31.2,
+    "peak": -13.4
+  },
+  "riser-2": {
+    "file": "riser-2.wav",
+    "base": "riser",
+    "variant": 2,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 0.58,
+    "mean": -38,
+    "peak": -21.5
+  },
+  "riser-3": {
+    "file": "riser-3.wav",
+    "base": "riser",
+    "variant": 3,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 2.31,
+    "mean": -30.6,
+    "peak": -12.1
+  },
+  "riser-4": {
+    "file": "riser-4.wav",
+    "base": "riser",
+    "variant": 4,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 1.01,
+    "mean": -32,
+    "peak": -13.6
+  },
+  "riser-5": {
+    "file": "riser-5.wav",
+    "base": "riser",
+    "variant": 5,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 2.92,
+    "mean": -30.1,
+    "peak": -13.5
+  },
+  "riser-6": {
+    "file": "riser-6.wav",
+    "base": "riser",
+    "variant": 6,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 2.41,
+    "mean": -30.8,
+    "peak": -13.7
+  },
+  "riser-7": {
+    "file": "riser-7.wav",
+    "base": "riser",
+    "variant": 7,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 2.94,
+    "mean": -30.3,
+    "peak": -10.1
+  },
+  "riser-8": {
+    "file": "riser-8.wav",
+    "base": "riser",
+    "variant": 8,
+    "class": "accent",
+    "use": "dồn nhịp ngắn trước câu quan trọng",
+    "duration": 0.65,
+    "mean": -32.2,
+    "peak": -14.4
+  },
+  "riser-drop": {
+    "file": "riser-drop.wav",
+    "base": "riser-drop",
+    "variant": 1,
+    "class": "accent",
+    "use": "dồn rồi đập bass, lộ kết quả",
+    "duration": 3,
+    "mean": -30,
+    "peak": -19.5
+  },
+  "riser-drop-2": {
+    "file": "riser-drop-2.wav",
+    "base": "riser-drop",
+    "variant": 2,
+    "class": "accent",
+    "use": "dồn rồi đập bass, lộ kết quả",
+    "duration": 3,
+    "mean": -30,
+    "peak": -19.7
+  },
+  "riser-drop-3": {
+    "file": "riser-drop-3.wav",
+    "base": "riser-drop",
+    "variant": 3,
+    "class": "accent",
+    "use": "dồn rồi đập bass, lộ kết quả",
+    "duration": 3,
+    "mean": -30,
+    "peak": -11.4
+  },
+  "riser-drop-4": {
+    "file": "riser-drop-4.wav",
+    "base": "riser-drop",
+    "variant": 4,
+    "class": "accent",
+    "use": "dồn rồi đập bass, lộ kết quả",
+    "duration": 2.68,
+    "mean": -30,
+    "peak": -18.4
+  },
+  "riser-long": {
+    "file": "riser-long.wav",
+    "base": "riser-long",
+    "variant": 1,
+    "class": "accent",
+    "use": "dồn nhịp dài trước khi lộ kết quả",
+    "duration": 3,
+    "mean": -30,
+    "peak": -16
+  },
+  "riser-long-2": {
+    "file": "riser-long-2.wav",
+    "base": "riser-long",
+    "variant": 2,
+    "class": "accent",
+    "use": "dồn nhịp dài trước khi lộ kết quả",
+    "duration": 3,
+    "mean": -30.1,
+    "peak": -9.6
+  },
+  "sad-trombone": {
+    "file": "sad-trombone.wav",
+    "base": "sad-trombone",
+    "variant": 1,
+    "class": "accent",
+    "use": "thất bại kiểu hài",
+    "duration": 3,
+    "mean": -30,
+    "peak": -15.1
+  },
+  "scribble": {
+    "file": "scribble.wav",
+    "base": "scribble",
+    "variant": 1,
+    "class": "accent",
+    "use": "gạch chữ, quẹt highlight",
+    "duration": 1.03,
+    "mean": -30.6,
+    "peak": -12
+  },
+  "scroll": {
+    "file": "scroll.wav",
+    "base": "scroll",
+    "variant": 1,
+    "class": "ui",
+    "use": "cuộn danh sách",
+    "duration": 1.2,
+    "mean": -33.4,
+    "peak": -9
+  },
+  "send": {
+    "file": "send.wav",
+    "base": "send",
+    "variant": 1,
+    "class": "ui",
+    "use": "gửi tin/file",
+    "duration": 0.68,
+    "mean": -31.7,
+    "peak": -14.6
+  },
+  "send-2": {
+    "file": "send-2.wav",
+    "base": "send",
+    "variant": 2,
+    "class": "ui",
+    "use": "gửi tin/file",
+    "duration": 0.4,
+    "mean": -31,
+    "peak": -18.6
+  },
+  "shimmer": {
+    "file": "shimmer.wav",
+    "base": "shimmer",
+    "variant": 1,
+    "class": "accent",
+    "use": "nhẹ nhõm, sáng tỏ, kết đẹp",
+    "duration": 1.04,
+    "mean": -30,
+    "peak": -11.6
+  },
+  "shimmer-2": {
+    "file": "shimmer-2.wav",
+    "base": "shimmer",
+    "variant": 2,
+    "class": "accent",
+    "use": "nhẹ nhõm, sáng tỏ, kết đẹp",
+    "duration": 1.78,
+    "mean": -30,
+    "peak": -11.2
+  },
+  "shimmer-3": {
+    "file": "shimmer-3.wav",
+    "base": "shimmer",
+    "variant": 3,
+    "class": "accent",
+    "use": "nhẹ nhõm, sáng tỏ, kết đẹp",
+    "duration": 2.41,
+    "mean": -30,
+    "peak": -12.5
+  },
+  "shock": {
+    "file": "shock.wav",
+    "base": "shock",
+    "variant": 1,
+    "class": "accent",
+    "use": "sốc, choáng",
+    "duration": 2.29,
+    "mean": -30,
+    "peak": -13.5
+  },
+  "slash": {
+    "file": "slash.wav",
+    "base": "slash",
+    "variant": 1,
+    "class": "accent",
+    "use": "chém giá, cắt giảm",
+    "duration": 0.33,
+    "mean": -30.1,
+    "peak": -13
+  },
+  "slash-2": {
+    "file": "slash-2.wav",
+    "base": "slash",
+    "variant": 2,
+    "class": "accent",
+    "use": "chém giá, cắt giảm, cắt lỗ",
+    "duration": 0.36,
+    "mean": -30,
+    "peak": -13.1
+  },
+  "slash-3": {
+    "file": "slash-3.wav",
+    "base": "slash",
+    "variant": 3,
+    "class": "accent",
+    "use": "chém giá, cắt giảm, cắt lỗ",
+    "duration": 1.32,
+    "mean": -30,
+    "peak": -13.6
+  },
+  "slide": {
+    "file": "slide.wav",
+    "base": "slide",
+    "variant": 1,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.64,
+    "mean": -30.1,
+    "peak": -13.8
+  },
+  "slide-2": {
+    "file": "slide-2.wav",
+    "base": "slide",
+    "variant": 2,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.51,
+    "mean": -30.2,
+    "peak": -8.8
+  },
+  "slide-3": {
+    "file": "slide-3.wav",
+    "base": "slide",
+    "variant": 3,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.74,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "slide-4": {
+    "file": "slide-4.wav",
+    "base": "slide",
+    "variant": 4,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.85,
+    "mean": -30.3,
+    "peak": -8
+  },
+  "slide-5": {
+    "file": "slide-5.wav",
+    "base": "slide",
+    "variant": 5,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.34,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "slide-6": {
+    "file": "slide-6.wav",
+    "base": "slide",
+    "variant": 6,
+    "class": "transition",
+    "use": "khung/ảnh trượt vào, đổi slide",
+    "duration": 0.51,
+    "mean": -30.2,
+    "peak": -10.8
+  },
+  "snap": {
+    "file": "snap.wav",
+    "base": "snap",
+    "variant": 1,
+    "class": "impact",
+    "use": "búng tay, đổi ý nhanh",
+    "duration": 0.11,
+    "mean": -28.8,
+    "peak": -6
+  },
+  "snap-2": {
+    "file": "snap-2.wav",
+    "base": "snap",
+    "variant": 2,
+    "class": "impact",
+    "use": "búng tay, đổi ý nhanh",
+    "duration": 1.53,
+    "mean": -31.5,
+    "peak": -6
+  },
+  "sparkle": {
+    "file": "sparkle.wav",
+    "base": "sparkle",
+    "variant": 1,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng của căn nhà",
+    "duration": 0.19,
+    "mean": -30,
+    "peak": -11.9
+  },
+  "sparkle-2": {
+    "file": "sparkle-2.wav",
+    "base": "sparkle",
+    "variant": 2,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 0.52,
+    "mean": -30.4,
+    "peak": -8
+  },
+  "sparkle-3": {
+    "file": "sparkle-3.wav",
+    "base": "sparkle",
+    "variant": 3,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 1.18,
+    "mean": -30,
+    "peak": -8.6
+  },
+  "sparkle-4": {
+    "file": "sparkle-4.wav",
+    "base": "sparkle",
+    "variant": 4,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 0.59,
+    "mean": -30,
+    "peak": -12.1
+  },
+  "sparkle-5": {
+    "file": "sparkle-5.wav",
+    "base": "sparkle",
+    "variant": 5,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 1.5,
+    "mean": -30,
+    "peak": -15
+  },
+  "sparkle-6": {
+    "file": "sparkle-6.wav",
+    "base": "sparkle",
+    "variant": 6,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 3,
+    "mean": -30,
+    "peak": -8.5
+  },
+  "sparkle-7": {
+    "file": "sparkle-7.wav",
+    "base": "sparkle",
+    "variant": 7,
+    "class": "accent",
+    "use": "lấp lánh, điểm sáng, điểm nổi bật",
+    "duration": 0.26,
+    "mean": -30.1,
+    "peak": -8
+  },
+  "stamp": {
+    "file": "stamp.wav",
+    "base": "stamp",
+    "variant": 1,
+    "class": "impact",
+    "use": "nhãn/dấu đập xuống",
+    "duration": 0.4,
+    "mean": -30.3,
+    "peak": -6
+  },
+  "stamp-2": {
+    "file": "stamp-2.wav",
+    "base": "stamp",
+    "variant": 2,
+    "class": "impact",
+    "use": "nhãn/dấu đập xuống",
+    "duration": 0.54,
+    "mean": -28,
+    "peak": -10.2
+  },
+  "stamp-3": {
+    "file": "stamp-3.wav",
+    "base": "stamp",
+    "variant": 3,
+    "class": "impact",
+    "use": "nhãn/dấu đập xuống",
+    "duration": 0.4,
+    "mean": -30.3,
+    "peak": -6
+  },
+  "step": {
+    "file": "step.wav",
+    "base": "step",
+    "variant": 1,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 0.05,
+    "mean": -31,
+    "peak": -24
+  },
+  "step-2": {
+    "file": "step-2.wav",
+    "base": "step",
+    "variant": 2,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 0.19,
+    "mean": -31,
+    "peak": -19.9
+  },
+  "step-3": {
+    "file": "step-3.wav",
+    "base": "step",
+    "variant": 3,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 1.1,
+    "mean": -31,
+    "peak": -9.3
+  },
+  "step-4": {
+    "file": "step-4.wav",
+    "base": "step",
+    "variant": 4,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 0.08,
+    "mean": -31,
+    "peak": -9.5
+  },
+  "step-5": {
+    "file": "step-5.wav",
+    "base": "step",
+    "variant": 5,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 0.17,
+    "mean": -31,
+    "peak": -19.1
+  },
+  "step-6": {
+    "file": "step-6.wav",
+    "base": "step",
+    "variant": 6,
+    "class": "ui",
+    "use": "mốc thời gian, tiến từng nấc",
+    "duration": 0.18,
+    "mean": -31,
+    "peak": -14.6
+  },
+  "sting": {
+    "file": "sting.wav",
+    "base": "sting",
+    "variant": 1,
+    "class": "accent",
+    "use": "nốt giật mình, tiết lộ rủi ro",
+    "duration": 1.04,
+    "mean": -30,
+    "peak": -12.7
+  },
+  "sting-2": {
+    "file": "sting-2.wav",
+    "base": "sting",
+    "variant": 2,
+    "class": "accent",
+    "use": "nốt giật mình, tiết lộ rủi ro",
+    "duration": 1.19,
+    "mean": -30,
+    "peak": -13.1
+  },
+  "sting-3": {
+    "file": "sting-3.wav",
+    "base": "sting",
+    "variant": 3,
+    "class": "accent",
+    "use": "nốt giật mình, tiết lộ rủi ro",
+    "duration": 1.32,
+    "mean": -30,
+    "peak": -12.3
+  },
+  "sting-4": {
+    "file": "sting-4.wav",
+    "base": "sting",
+    "variant": 4,
+    "class": "accent",
+    "use": "nốt giật mình, tiết lộ rủi ro",
+    "duration": 1.34,
+    "mean": -30,
+    "peak": -15.7
+  },
+  "sub-hit": {
+    "file": "sub-hit.wav",
+    "base": "sub-hit",
+    "variant": 1,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 0.82,
+    "mean": -28.1,
+    "peak": -23.7
+  },
+  "sub-hit-2": {
+    "file": "sub-hit-2.wav",
+    "base": "sub-hit",
+    "variant": 2,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -12.3
+  },
+  "sub-hit-3": {
+    "file": "sub-hit-3.wav",
+    "base": "sub-hit",
+    "variant": 3,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -14
+  },
+  "sub-hit-4": {
+    "file": "sub-hit-4.wav",
+    "base": "sub-hit",
+    "variant": 4,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -15.3
+  },
+  "sub-hit-5": {
+    "file": "sub-hit-5.wav",
+    "base": "sub-hit",
+    "variant": 5,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -8.1
+  },
+  "sub-hit-6": {
+    "file": "sub-hit-6.wav",
+    "base": "sub-hit",
+    "variant": 6,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -13
+  },
+  "sub-hit-7": {
+    "file": "sub-hit-7.wav",
+    "base": "sub-hit",
+    "variant": 7,
+    "class": "impact",
+    "use": "nhịp trầm khi keyword/số đập xuống, nhẹ hơn hit",
+    "duration": 2,
+    "mean": -28,
+    "peak": -13.4
+  },
+  "success": {
+    "file": "success.wav",
+    "base": "success",
+    "variant": 1,
+    "class": "accent",
+    "use": "đúng, hoàn thành, kết quả tốt",
+    "duration": 3,
+    "mean": -30,
+    "peak": -12.3
+  },
+  "success-2": {
+    "file": "success-2.wav",
+    "base": "success",
+    "variant": 2,
+    "class": "accent",
+    "use": "đúng, hoàn thành, kết quả tốt",
+    "duration": 0.59,
+    "mean": -30,
+    "peak": -22.1
+  },
+  "success-3": {
+    "file": "success-3.wav",
+    "base": "success",
+    "variant": 3,
+    "class": "accent",
+    "use": "đúng, hoàn thành, kết quả tốt",
+    "duration": 1.66,
+    "mean": -30,
+    "peak": -17.4
+  },
+  "success-4": {
+    "file": "success-4.wav",
+    "base": "success",
+    "variant": 4,
+    "class": "accent",
+    "use": "đúng, hoàn thành, kết quả tốt",
+    "duration": 1.98,
+    "mean": -30,
+    "peak": -16.6
+  },
+  "success-5": {
+    "file": "success-5.wav",
+    "base": "success",
+    "variant": 5,
+    "class": "accent",
+    "use": "đúng, hoàn thành, kết quả tốt",
+    "duration": 1.44,
+    "mean": -30,
+    "peak": -13.3
+  },
+  "surprise": {
+    "file": "surprise.wav",
+    "base": "surprise",
+    "variant": 1,
+    "class": "accent",
+    "use": "bất ngờ",
+    "duration": 3,
+    "mean": -30,
+    "peak": -18.5
+  },
+  "suspense": {
+    "file": "suspense.wav",
+    "base": "suspense",
+    "variant": 1,
+    "class": "ambience",
+    "use": "bí ẩn, 'nhưng mà…'",
+    "duration": 4,
+    "mean": -36,
+    "peak": -20.9
+  },
+  "swipe": {
+    "file": "swipe.wav",
+    "base": "swipe",
+    "variant": 1,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.4,
+    "mean": -30,
+    "peak": -12.6
+  },
+  "swipe-2": {
+    "file": "swipe-2.wav",
+    "base": "swipe",
+    "variant": 2,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.41,
+    "mean": -30.1,
+    "peak": -11.5
+  },
+  "swipe-3": {
+    "file": "swipe-3.wav",
+    "base": "swipe",
+    "variant": 3,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.21,
+    "mean": -30.3,
+    "peak": -15.6
+  },
+  "swipe-4": {
+    "file": "swipe-4.wav",
+    "base": "swipe",
+    "variant": 4,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.25,
+    "mean": -30,
+    "peak": -10.1
+  },
+  "swipe-5": {
+    "file": "swipe-5.wav",
+    "base": "swipe",
+    "variant": 5,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.36,
+    "mean": -30.6,
+    "peak": -15.5
+  },
+  "swipe-6": {
+    "file": "swipe-6.wav",
+    "base": "swipe",
+    "variant": 6,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.18,
+    "mean": -30,
+    "peak": -12.9
+  },
+  "swipe-7": {
+    "file": "swipe-7.wav",
+    "base": "swipe",
+    "variant": 7,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.2,
+    "mean": -30,
+    "peak": -13.6
+  },
+  "swipe-8": {
+    "file": "swipe-8.wav",
+    "base": "swipe",
+    "variant": 8,
+    "class": "transition",
+    "use": "lướt thẻ, đổi bước",
+    "duration": 0.31,
+    "mean": -30.4,
+    "peak": -14.6
+  },
+  "text-tick": {
+    "file": "text-tick.wav",
+    "base": "text-tick",
+    "variant": 1,
+    "class": "ui",
+    "use": "nhãn/chữ phụ hiện ra, lớp tiếng nhỏ (nhẹ hơn title-in)",
+    "duration": 0.08,
+    "mean": -31,
+    "peak": -12.8
+  },
+  "text-tick-2": {
+    "file": "text-tick-2.wav",
+    "base": "text-tick",
+    "variant": 2,
+    "class": "ui",
+    "use": "nhãn/chữ phụ hiện ra, lớp tiếng nhỏ (nhẹ hơn title-in)",
+    "duration": 0.08,
+    "mean": -31.5,
+    "peak": -11
+  },
+  "text-tick-3": {
+    "file": "text-tick-3.wav",
+    "base": "text-tick",
+    "variant": 3,
+    "class": "ui",
+    "use": "nhãn/chữ phụ hiện ra, lớp tiếng nhỏ (nhẹ hơn title-in)",
+    "duration": 0.08,
+    "mean": -32.4,
+    "peak": -12.5
+  },
+  "text-tick-4": {
+    "file": "text-tick-4.wav",
+    "base": "text-tick",
+    "variant": 4,
+    "class": "ui",
+    "use": "nhãn/chữ phụ hiện ra, lớp tiếng nhỏ (nhẹ hơn title-in)",
+    "duration": 0.13,
+    "mean": -33,
+    "peak": -9
+  },
+  "thock": {
+    "file": "thock.wav",
+    "base": "thock",
+    "variant": 1,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.09,
+    "mean": -29.2,
+    "peak": -12
+  },
+  "thock-2": {
+    "file": "thock-2.wav",
+    "base": "thock",
+    "variant": 2,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.22,
+    "mean": -28.1,
+    "peak": -8.3
+  },
+  "thock-3": {
+    "file": "thock-3.wav",
+    "base": "thock",
+    "variant": 3,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.34,
+    "mean": -29,
+    "peak": -9
+  },
+  "thock-4": {
+    "file": "thock-4.wav",
+    "base": "thock",
+    "variant": 4,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.19,
+    "mean": -28.1,
+    "peak": -10.3
+  },
+  "thock-5": {
+    "file": "thock-5.wav",
+    "base": "thock",
+    "variant": 5,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.21,
+    "mean": -28.1,
+    "peak": -6.5
+  },
+  "thock-6": {
+    "file": "thock-6.wav",
+    "base": "thock",
+    "variant": 6,
+    "class": "impact",
+    "use": "khung chốt lại, punch-in, chuyển bối cảnh gọn",
+    "duration": 0.23,
+    "mean": -28.5,
+    "peak": -9
+  },
+  "thunder": {
+    "file": "thunder.wav",
+    "base": "thunder",
+    "variant": 1,
+    "class": "accent",
+    "use": "tin sốc, sét đánh ngang tai",
+    "duration": 3,
+    "mean": -30,
+    "peak": -18
+  },
+  "tick": {
+    "file": "tick.wav",
+    "base": "tick",
+    "variant": 1,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 1.2,
+    "mean": -32.4,
+    "peak": -9
+  },
+  "tick-2": {
+    "file": "tick-2.wav",
+    "base": "tick",
+    "variant": 2,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 0.03,
+    "mean": -31,
+    "peak": -12.7
+  },
+  "tick-3": {
+    "file": "tick-3.wav",
+    "base": "tick",
+    "variant": 3,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 0.27,
+    "mean": -35.1,
+    "peak": -9
+  },
+  "tick-4": {
+    "file": "tick-4.wav",
+    "base": "tick",
+    "variant": 4,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 0.17,
+    "mean": -32.7,
+    "peak": -9.9
+  },
+  "tick-5": {
+    "file": "tick-5.wav",
+    "base": "tick",
+    "variant": 5,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 0.27,
+    "mean": -38.4,
+    "peak": -9
+  },
+  "tick-6": {
+    "file": "tick-6.wav",
+    "base": "tick",
+    "variant": 6,
+    "class": "ui",
+    "use": "đồng hồ, số đếm",
+    "duration": 0.14,
+    "mean": -35.5,
+    "peak": -9
+  },
+  "tick-tock": {
+    "file": "tick-tock.wav",
+    "base": "tick-tock",
+    "variant": 1,
+    "class": "ambience",
+    "use": "áp lực thời gian",
+    "duration": 3.75,
+    "mean": -37.2,
+    "peak": -14
+  },
+  "ting": {
+    "file": "ting.wav",
+    "base": "ting",
+    "variant": 1,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.93,
+    "mean": -33.2,
+    "peak": -8
+  },
+  "ting-2": {
+    "file": "ting-2.wav",
+    "base": "ting",
+    "variant": 2,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.47,
+    "mean": -30,
+    "peak": -13.5
+  },
+  "ting-3": {
+    "file": "ting-3.wav",
+    "base": "ting",
+    "variant": 3,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.19,
+    "mean": -30,
+    "peak": -11.9
+  },
+  "ting-4": {
+    "file": "ting-4.wav",
+    "base": "ting",
+    "variant": 4,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.25,
+    "mean": -30.1,
+    "peak": -12.4
+  },
+  "ting-5": {
+    "file": "ting-5.wav",
+    "base": "ting",
+    "variant": 5,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.07,
+    "mean": -30,
+    "peak": -9.1
+  },
+  "ting-6": {
+    "file": "ting-6.wav",
+    "base": "ting",
+    "variant": 6,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.32,
+    "mean": -30,
+    "peak": -10.6
+  },
+  "ting-7": {
+    "file": "ting-7.wav",
+    "base": "ting",
+    "variant": 7,
+    "class": "accent",
+    "use": "'ting' sáng, chốt nhẹ",
+    "duration": 0.38,
+    "mean": -30.8,
+    "peak": -8
+  },
+  "title-in": {
+    "file": "title-in.wav",
+    "base": "title-in",
+    "variant": 1,
+    "class": "accent",
+    "use": "hiện tiêu đề kiểu bản tin",
+    "duration": 1.61,
+    "mean": -30,
+    "peak": -13.5
+  },
+  "title-in-2": {
+    "file": "title-in-2.wav",
+    "base": "title-in",
+    "variant": 2,
+    "class": "accent",
+    "use": "hiện tiêu đề kiểu bản tin",
+    "duration": 1.26,
+    "mean": -30,
+    "peak": -13.1
+  },
+  "title-in-3": {
+    "file": "title-in-3.wav",
+    "base": "title-in",
+    "variant": 3,
+    "class": "accent",
+    "use": "hiện tiêu đề kiểu bản tin",
+    "duration": 1.96,
+    "mean": -30,
+    "peak": -11.2
+  },
+  "title-in-4": {
+    "file": "title-in-4.wav",
+    "base": "title-in",
+    "variant": 4,
+    "class": "accent",
+    "use": "hiện tiêu đề kiểu bản tin",
+    "duration": 1.49,
+    "mean": -30,
+    "peak": -13.7
+  },
+  "toggle": {
+    "file": "toggle.wav",
+    "base": "toggle",
+    "variant": 1,
+    "class": "ui",
+    "use": "bật/tắt, so sánh A/B",
+    "duration": 0.42,
+    "mean": -33.2,
+    "peak": -9
+  },
+  "toggle-2": {
+    "file": "toggle-2.wav",
+    "base": "toggle",
+    "variant": 2,
+    "class": "ui",
+    "use": "bật/tắt, so sánh A/B",
+    "duration": 0.47,
+    "mean": -32.7,
+    "peak": -9
+  },
+  "toggle-3": {
+    "file": "toggle-3.wav",
+    "base": "toggle",
+    "variant": 3,
+    "class": "ui",
+    "use": "bật/tắt, so sánh A/B",
+    "duration": 0.42,
+    "mean": -33.2,
+    "peak": -9
+  },
+  "type": {
+    "file": "type.wav",
+    "base": "type",
+    "variant": 1,
+    "class": "ui",
+    "use": "gõ chữ, nhập số",
+    "duration": 0.13,
+    "mean": -31.2,
+    "peak": -9
+  },
+  "type-2": {
+    "file": "type-2.wav",
+    "base": "type",
+    "variant": 2,
+    "class": "ui",
+    "use": "gõ chữ, nhập số",
+    "duration": 1.13,
+    "mean": -31.9,
+    "peak": -9
+  },
+  "type-3": {
+    "file": "type-3.wav",
+    "base": "type",
+    "variant": 3,
+    "class": "ui",
+    "use": "gõ chữ, nhập số",
+    "duration": 0.31,
+    "mean": -36.7,
+    "peak": -13.6
+  },
+  "unlock": {
+    "file": "unlock.wav",
+    "base": "unlock",
+    "variant": 1,
+    "class": "ui",
+    "use": "mở khóa, được rồi",
+    "duration": 1.2,
+    "mean": -32.3,
+    "peak": -9
+  },
+  "unlock-2": {
+    "file": "unlock-2.wav",
+    "base": "unlock",
+    "variant": 2,
+    "class": "ui",
+    "use": "mở khóa, được rồi",
+    "duration": 0.35,
+    "mean": -32.2,
+    "peak": -18.1
+  },
+  "whoosh-double": {
+    "file": "whoosh-double.wav",
+    "base": "whoosh-double",
+    "variant": 1,
+    "class": "transition",
+    "use": "whoosh kép, đổi 2 ý liên tiếp",
+    "duration": 0.18,
+    "mean": -30,
+    "peak": -12.1
+  },
+  "whoosh-double-2": {
+    "file": "whoosh-double-2.wav",
+    "base": "whoosh-double",
+    "variant": 2,
+    "class": "transition",
+    "use": "whoosh kép, đổi 2 ý liên tiếp",
+    "duration": 0.16,
+    "mean": -30,
+    "peak": -11.1
+  },
+  "whoosh-double-3": {
+    "file": "whoosh-double-3.wav",
+    "base": "whoosh-double",
+    "variant": 3,
+    "class": "transition",
+    "use": "whoosh kép, đổi 2 ý liên tiếp",
+    "duration": 0.22,
+    "mean": -30,
+    "peak": -12.3
+  },
+  "whoosh-fast": {
+    "file": "whoosh-fast.wav",
+    "base": "whoosh-fast",
+    "variant": 1,
+    "class": "transition",
+    "use": "chuyển cảnh nhanh, đẩy/trượt",
+    "duration": 0.22,
+    "mean": -30,
+    "peak": -14
+  },
+  "whoosh-fast-2": {
+    "file": "whoosh-fast-2.wav",
+    "base": "whoosh-fast",
+    "variant": 2,
+    "class": "transition",
+    "use": "chuyển cảnh nhanh, đẩy/trượt",
+    "duration": 0.3,
+    "mean": -30,
+    "peak": -11.7
+  },
+  "whoosh-fast-3": {
+    "file": "whoosh-fast-3.wav",
+    "base": "whoosh-fast",
+    "variant": 3,
+    "class": "transition",
+    "use": "chuyển cảnh nhanh, đẩy/trượt",
+    "duration": 0.8,
+    "mean": -30,
+    "peak": -12.5
+  },
+  "whoosh-fast-4": {
+    "file": "whoosh-fast-4.wav",
+    "base": "whoosh-fast",
+    "variant": 4,
+    "class": "transition",
+    "use": "chuyển cảnh nhanh, đẩy/trượt",
+    "duration": 0.18,
+    "mean": -30,
+    "peak": -15.6
+  },
+  "whoosh-heavy": {
+    "file": "whoosh-heavy.wav",
+    "base": "whoosh-heavy",
+    "variant": 1,
+    "class": "transition",
+    "use": "chuyển chương lớn, có bass",
+    "duration": 1.6,
+    "mean": -30.1,
+    "peak": -21.6
+  },
+  "whoosh-heavy-2": {
+    "file": "whoosh-heavy-2.wav",
+    "base": "whoosh-heavy",
+    "variant": 2,
+    "class": "transition",
+    "use": "chuyển chương lớn, có bass",
+    "duration": 1.24,
+    "mean": -30,
+    "peak": -15
+  },
+  "whoosh-heavy-3": {
+    "file": "whoosh-heavy-3.wav",
+    "base": "whoosh-heavy",
+    "variant": 3,
+    "class": "transition",
+    "use": "chuyển chương lớn, có bass",
+    "duration": 1.08,
+    "mean": -30,
+    "peak": -17.2
+  },
+  "whoosh-soft": {
+    "file": "whoosh-soft.wav",
+    "base": "whoosh-soft",
+    "variant": 1,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.56,
+    "mean": -30,
+    "peak": -13
+  },
+  "whoosh-soft-2": {
+    "file": "whoosh-soft-2.wav",
+    "base": "whoosh-soft",
+    "variant": 2,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.6,
+    "mean": -30,
+    "peak": -13.6
+  },
+  "whoosh-soft-3": {
+    "file": "whoosh-soft-3.wav",
+    "base": "whoosh-soft",
+    "variant": 3,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.75,
+    "mean": -30,
+    "peak": -16.2
+  },
+  "whoosh-soft-4": {
+    "file": "whoosh-soft-4.wav",
+    "base": "whoosh-soft",
+    "variant": 4,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.18,
+    "mean": -30,
+    "peak": -17.8
+  },
+  "whoosh-soft-5": {
+    "file": "whoosh-soft-5.wav",
+    "base": "whoosh-soft",
+    "variant": 5,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.02,
+    "mean": -30,
+    "peak": -12.5
+  },
+  "whoosh-soft-6": {
+    "file": "whoosh-soft-6.wav",
+    "base": "whoosh-soft",
+    "variant": 6,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.68,
+    "mean": -30.1,
+    "peak": -13.9
+  },
+  "whoosh-soft-7": {
+    "file": "whoosh-soft-7.wav",
+    "base": "whoosh-soft",
+    "variant": 7,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.73,
+    "mean": -30,
+    "peak": -13.9
+  },
+  "whoosh-soft-8": {
+    "file": "whoosh-soft-8.wav",
+    "base": "whoosh-soft",
+    "variant": 8,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.64,
+    "mean": -30,
+    "peak": -16.4
+  },
+  "whoosh-soft-9": {
+    "file": "whoosh-soft-9.wav",
+    "base": "whoosh-soft",
+    "variant": 9,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.04,
+    "mean": -30,
+    "peak": -14.6
+  },
+  "whoosh-soft-10": {
+    "file": "whoosh-soft-10.wav",
+    "base": "whoosh-soft",
+    "variant": 10,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.72,
+    "mean": -30,
+    "peak": -14.9
+  },
+  "whoosh-soft-11": {
+    "file": "whoosh-soft-11.wav",
+    "base": "whoosh-soft",
+    "variant": 11,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 0.9,
+    "mean": -30.1,
+    "peak": -14.4
+  },
+  "whoosh-soft-12": {
+    "file": "whoosh-soft-12.wav",
+    "base": "whoosh-soft",
+    "variant": 12,
+    "class": "transition",
+    "use": "chuyển cảnh nhẹ, mờ dần",
+    "duration": 1.06,
+    "mean": -30,
+    "peak": -12.9
+  },
+  "whoosh-tech": {
+    "file": "whoosh-tech.wav",
+    "base": "whoosh-tech",
+    "variant": 1,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 0.21,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "whoosh-tech-2": {
+    "file": "whoosh-tech-2.wav",
+    "base": "whoosh-tech",
+    "variant": 2,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.34,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "whoosh-tech-3": {
+    "file": "whoosh-tech-3.wav",
+    "base": "whoosh-tech",
+    "variant": 3,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.6,
+    "mean": -30,
+    "peak": -11.8
+  },
+  "whoosh-tech-4": {
+    "file": "whoosh-tech-4.wav",
+    "base": "whoosh-tech",
+    "variant": 4,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.6,
+    "mean": -30.5,
+    "peak": -8
+  },
+  "whoosh-tech-5": {
+    "file": "whoosh-tech-5.wav",
+    "base": "whoosh-tech",
+    "variant": 5,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.08,
+    "mean": -30,
+    "peak": -14.1
+  },
+  "whoosh-tech-6": {
+    "file": "whoosh-tech-6.wav",
+    "base": "whoosh-tech",
+    "variant": 6,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 0.78,
+    "mean": -30.3,
+    "peak": -8
+  },
+  "whoosh-tech-7": {
+    "file": "whoosh-tech-7.wav",
+    "base": "whoosh-tech",
+    "variant": 7,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.6,
+    "mean": -30,
+    "peak": -12.6
+  },
+  "whoosh-tech-8": {
+    "file": "whoosh-tech-8.wav",
+    "base": "whoosh-tech",
+    "variant": 8,
+    "class": "transition",
+    "use": "chuyển cảnh kiểu công nghệ: dữ liệu, giao diện số, biểu đồ",
+    "duration": 1.58,
+    "mean": -30,
+    "peak": -16.2
+  },
+  "wow": {
+    "file": "wow.wav",
+    "base": "wow",
+    "variant": 1,
+    "class": "accent",
+    "use": "'wow', trầm trồ",
+    "duration": 2.72,
+    "mean": -30,
+    "peak": -14.3
+  },
+  "wrong-buzzer": {
+    "file": "wrong-buzzer.wav",
+    "base": "wrong-buzzer",
+    "variant": 1,
+    "class": "accent",
+    "use": "sai, bị loại",
+    "duration": 1.1,
+    "mean": -30.1,
+    "peak": -23.1
+  },
+  "wrong-buzzer-2": {
+    "file": "wrong-buzzer-2.wav",
+    "base": "wrong-buzzer",
+    "variant": 2,
+    "class": "accent",
+    "use": "sai, bị loại",
+    "duration": 0.35,
+    "mean": -30.9,
+    "peak": -18.5
+  },
+  "zoom-in": {
+    "file": "zoom-in.wav",
+    "base": "zoom-in",
+    "variant": 1,
+    "class": "transition",
+    "use": "phóng vào chi tiết",
+    "duration": 1.02,
+    "mean": -30,
+    "peak": -13.8
+  },
+  "zoom-in-2": {
+    "file": "zoom-in-2.wav",
+    "base": "zoom-in",
+    "variant": 2,
+    "class": "transition",
+    "use": "phóng vào chi tiết",
+    "duration": 1.23,
+    "mean": -30,
+    "peak": -12
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_doc": "Lớp SFX của âm thanh 4 lớp (VAN-HANH 5): spot SFX theo vai chữ + foley (tiếng đời thực khớp hành động trên hình: bước chân, cửa, giấy tờ; đặt tay trong sfx_layer với role \"foley\"). Vai SFX → tên gốc (base) trong sfx/catalog.json, xếp theo mức ưu tiên. Khối chữ đặt sfx: 'auto' thì lib chọn tên chưa dùng trong 30 s (luật 10, 17). Không tự chọn reveal (khởi đầu chậm, đo ra nhỏ — TALKING-HEAD 4a). Không có tiếng hài (bruh, aww, oops, doink, boing, sad-trombone) và không tự chọn scribble (scribble-2 bị cấm, CLAUDE.md; tiếng gạch khác ghi tay khi cần).",
+  "roles": {
+    "chu-vao":     ["pop", "text-tick", "title-in", "click", "ting", "toggle", "snap", "pop-multi", "neon-on", "check"],
+    "lap-lanh":    ["sparkle", "shimmer", "ding-idea", "success", "confirm"],
+    "chuyen-canh": ["whoosh-soft", "whoosh-tech", "whoosh-fast", "whoosh-heavy", "whoosh-double", "swipe", "slide", "zoom-in", "glitch"],
+    "dang":        ["riser", "riser-long", "riser-drop"],
+    "chot":        ["sub-hit", "boom-heavy", "thock", "hit", "bass-drop", "stamp", "sting", "gong"],
+    "ban-do":      ["pin-drop", "notify", "open", "line-draw"],
+    "tien":        ["cash", "coin", "jackpot", "receipt", "counter-roll"],
+    "so-chay":     ["meter", "counter-roll", "tick", "chart-up"],
+    "phu-dinh":    ["error-soft", "wrong-buzzer", "alert", "lock"],
+    "giay-to":     ["paper-rustle", "page-turn", "stamp", "pen-click", "receipt"],
+    "cta":         ["send", "notify", "phone-ring", "confirm", "like"],
+    "foley":       ["step", "door-open", "knock", "creak", "paper-rustle", "page-turn", "pen-click", "crumple"]
+  },
+  "by_text_role": {
+    "mo-dau": "chot", "chot-y": "chu-vao", "con-so-tien": "tien", "con-so": "so-chay", "tang-giam": "so-chay",
+    "dia-danh": "ban-do", "thuat-ngu": "chu-vao", "so-sanh": "chuyen-canh", "canh-bao": "phu-dinh",
+    "trich-loi": "chu-vao", "liet-ke": "chu-vao", "trang-thai": "lap-lanh", "thoi-gian": "so-chay",
+    "qua-khu": "chuyen-canh", "phan-moi": "chuyen-canh", "canh-quan": "lap-lanh", "phan-khuc": "lap-lanh",
+    "tien-ich": "lap-lanh", "phap-ly": "giay-to", "ten-du-an": "chot", "cta": "cta", "cau-hoi": "chu-vao", "cao-trao": "chu-vao"
+  },
+  "formulas": {
+    "_doc": "Tổ hợp tiếng (PHONG-CACH-ME4REAL A4). offset tính từ lúc khối vào (bung-mo: từ đỉnh hook plan.hook_peak); thành phần rơi trước giây 0 thì bỏ; vol gợi ý 0,2–0,8; main = tiếng chính, các tiếng còn lại nhường khi quá sát.",
+    "bung-mo":  [{ "role": "dang", "offset": -1.6, "vol": 0.35 }, { "role": "chot", "offset": 0.0, "vol": 0.6, "main": true }, { "role": "lap-lanh", "offset": 0.4, "vol": 0.8 }],
+    "cum-chu":  [{ "role": "chu-vao", "per_line": true, "vol": 0.28 }],
+    "con-so":   [{ "role": "so-chay", "offset": 0.0, "vol": 0.35, "main": true }, { "role": "tien", "offset": 0.95, "vol": 0.4 }],
+    "ban-do":   [{ "role": "ban-do", "offset": 0.0, "vol": 0.5, "main": true }, { "role": "chuyen-canh", "offset": 0.3, "vol": 0.3 }],
+    "montage":  [{ "role": "chuyen-canh", "offset": 0.0, "vol": 0.4, "main": true }],
+    "cta":      [{ "role": "chu-vao", "per_line": true, "vol": 0.3 }, { "role": "cta", "offset": 0.1, "vol": 0.5 }]
+  }
+}

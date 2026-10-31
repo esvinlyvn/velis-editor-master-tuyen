@@ -1,0 +1,120 @@
+{
+ "video": "demo",
+ "kenh": null,
+ "recipe": "R1",
+ "style": {
+  "base": "S5",
+  "scrim": "mo"
+ },
+ "roles": {
+  "mo-dau": "noi-bat",
+  "con-so-tien": "gia-chot",
+  "trang-thai": "nhan-neon",
+  "cao-trao": "cao-trao",
+  "cta": "go-chu"
+ },
+ "music": {
+  "file": "work/demo/music.wav",
+  "bpm": 120,
+  "montage": [
+   [
+    8.6,
+    10.2
+   ]
+  ]
+ },
+ "blocks": [
+  {
+   "role": "mo-dau",
+   "at": 0.1,
+   "o": {
+    "m": "VEN SÔNG"
+   }
+  },
+  {
+   "role": "con-so-tien",
+   "at": "0:3",
+   "shift": -0.3,
+   "o": {
+    "k": "GIÁ CHỈ",
+    "value": 3,
+    "suffix": " TỶ"
+   }
+  },
+  {
+   "role": "trang-thai",
+   "at": "1:sở",
+   "color": "an-toan",
+   "o": {
+    "m": "SỞ HỮU LÂU DÀI"
+   }
+  },
+  {
+   "role": "chot-y",
+   "at": "1:cách",
+   "color": "thoi-gian",
+   "o": {
+    "k": "Cách trung tâm",
+    "m": "15 PHÚT"
+   }
+  },
+  {
+   "role": "cao-trao",
+   "at": "2:không",
+   "o": {
+    "lines": [
+     {
+      "parts": [
+       {
+        "t": "không chỉ là",
+        "v": "dem"
+       },
+       {
+        "t": "Nơi Ở",
+        "v": "cam"
+       }
+      ],
+      "at": "2:không"
+     },
+     {
+      "parts": [
+       {
+        "t": "mà còn",
+        "v": "dem"
+       },
+       {
+        "t": "mở ra",
+        "v": "khoa"
+       }
+      ],
+      "at": "2:mà"
+     },
+     {
+      "t": "một cơ hội",
+      "v": "dem",
+      "at": "2:một"
+     },
+     {
+      "t": "hiếm có",
+      "v": "chot",
+      "at": "2:hiếm"
+     }
+    ]
+   }
+  },
+  {
+   "role": "cta",
+   "at": "3:bảng",
+   "o": {
+    "m": "Nhận bảng giá"
+   }
+  }
+ ],
+ "sfx_layer": [
+  {
+   "at": 5.25,
+   "role": "chuyen-canh",
+   "why": "đổi cảnh trong clip (thử)"
+  }
+ ]
+}

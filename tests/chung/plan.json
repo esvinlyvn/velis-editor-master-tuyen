@@ -1,0 +1,13 @@
+{
+ "video": "chung",
+ "kenh": null,
+ "style": { "base": "S1" },
+ "blocks": [
+  { "p": "chung:a-hook", "at": 0.1, "o": { "texts": ["Căn hộ", "VEN SÔNG", null] } },
+  { "p": "chung:100-trieu", "at": "0:3", "shift": -0.3, "o": { "texts": ["giá chỉ", "3 Tỷ", "một căn"] } },
+  { "p": "chung:khoa-hoc", "at": "1:sở", "color": "an-toan", "o": { "texts": ["Sở hữu lâu dài"] } },
+  { "p": "chung:d-counter", "at": "1:cách", "o": { "texts": ["15", "PHÚT TỚI TRUNG TÂM"] } },
+  { "p": "chung:c-hook", "at": "2:mở", "o": { "texts": ["HIẾM CÓ", "không chỉ là nơi ở"] } },
+  { "p": "chung:dang-ky", "at": "3:nhắn", "o": { "texts": ["Nhắn tin", "Nhận bảng giá"] } }
+ ]
+}

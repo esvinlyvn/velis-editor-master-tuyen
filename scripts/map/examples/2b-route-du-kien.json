@@ -1,0 +1,14 @@
+{
+ "name": "2b-route-du-kien",
+ "template": "route",
+ "region": "hcm-dongnai",
+ "style": "light",
+ "theme": "rose",
+ "points": { "thu-thiem": [106.7212, 10.7748], "long-thanh": [107.0535, 10.776] },
+ "route": { "geojson": "tuyen-minh-hoa.geojson" },
+ "end": "fit",
+ "drawAt": 1.0,
+ "drawDur": 3.2,
+ "fromLabel": { "texts": ["THỦ THIÊM", "điểm đầu"] },
+ "toLabel": { "texts": ["TUYẾN MINH HỌA", "chưa xây"] }
+}

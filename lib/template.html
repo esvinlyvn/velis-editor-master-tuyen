@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>{{TITLE}}</title>
+    <!-- Template chung của bds-editor (lib/README.md). Không sửa theo từng video: mọi khác biệt đi qua plan.json. -->
+    <script src="assets/vendor/gsap.min.js"></script>
+    {{BDS_JS}}
+    <style>
+{{FONTS}}
+      body { margin: 0; background: #000; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #000; }
+      /* Không biến đổi #ft (zoom/lia) trong cửa sổ chữ-sau-người: lib phủ lại người gốc sau render (scripts/fx/behind.mjs). */
+      #ft { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+      .bds { font-weight: 900; }
+      /* ô chữ: căn giữa khung 1080, rộng tối đa 900; top theo từng khối. Không đặt class "slot" (trùng class nội bộ của quay-vong) */
+      .kt-slot { position: absolute; left: 90px; right: 90px; display: flex; justify-content: center; }
+      .kt-slot.left { justify-content: flex-start; } .kt-slot.right { justify-content: flex-end; }
+      .kt-slot.narrow { left: 60px; right: 140px; } /* khối xuống dưới y 700: né cột nút bên phải (x > 940) */
+      .kt-slot.low { left: 140px; right: 140px; } /* dải dưới y 1240–1440: đối xứng 140–940, khớp kt-check */
+      /* Lớp phủ sau chữ (luật 13, 15, 18, 19): CHỈ hiện khi có chữ, mờ vào/ra theo đoạn, các khối liền nhau (nghỉ < 1 s) dùng chung một lần phủ.
+         Độ đậm theo nền đo được (scripts/text-contrast.mjs), tối đa 0,6; nền đủ tương phản thì không phủ. Dải trên: gradient từ đỉnh video, nhạt dần liên tục, hết 160 px dưới chữ.
+         Dải dưới: quanh các khối top ≥ 900. Chế độ "mo" (style.scrim): thêm lớp làm mờ nền cùng hình dạng dải trên (không làm tối thêm). */
+      .scrim { position: absolute; left: 0; right: 0; pointer-events: none; opacity: 0; }
+      #scrim { top: 0; height: 900px; } #scrim-low { top: 700px; height: 800px; }
+      #blur { top: 0; height: 900px; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+      /* Luật 18 (mới): xử lý sau chữ theo tương phản đo được (lib/build.mjs → c.fx). Đủ tương phản: KHÔNG có gì sau chữ.
+         Thiếu: viền mảnh → bóng gọn → (chữ tối trên nền tối) tỏa sáng nhẹ → lớp phủ #scrim; phủ tối đa vẫn thiếu thì thêm viền đậm. */
+      .kt-slot.fx-vien { filter: drop-shadow(0 0 1px rgba(0,0,0,.85)) drop-shadow(0 1px 1px rgba(0,0,0,.45)); }
+      .kt-slot.fx-bong { filter: drop-shadow(0 3px 5px rgba(0,0,0,.55)); }
+      .kt-slot.fx-sang { filter: drop-shadow(0 0 6px rgba(255,255,255,.75)); }
+      .kt-slot.fx-mo { filter: drop-shadow(0 0 1px rgba(0,0,0,.8)) drop-shadow(0 3px 6px rgba(0,0,0,.5)); }
+      .kt-slot.fx-phu-vien { filter: drop-shadow(0 0 1.5px rgba(0,0,0,.95)) drop-shadow(0 0 1px rgba(0,0,0,.9)) drop-shadow(0 1px 2px rgba(0,0,0,.6)); }
+      .kt-slot.behind { filter: drop-shadow(0 .03em .06em rgba(0,0,0,.9)); } /* khối lồng sau người: không dải tối, dùng bóng chữ (TALKING-HEAD 4b.6) */
+    </style>
+    {{BDS_CSS}}
+    {{CHUNG_CSS}}
+    <style>
+      /* gỡ quầng tối có sẵn trong CSS preset BĐS */
+      /* không quầng sáng nào sau chữ (luật 18): gỡ cả quầng cùng màu chữ của preset (neon, số, sóng, nổi bật, nghiêng, VHS, đỏ cảnh báo) */
+      .bds-noi-bat .m .ch, .bds-song .m .ch, .bds-ky-niem .m { text-shadow: none; }
+      .bds-canh-bao .m { text-shadow: none !important; } /* preset tween textShadow đỏ loang lúc gạch: !important thắng style inline */
+      .bds-canh-bao .strike { box-shadow: none; }
+      .bds-ky-thuat .m, .bds-chuyen-dong .l2 { filter: none; }
+      .bds-chuyen-dong .l1 .ch, .bds-toc-do .m .ch { text-shadow: none; }
+      .bds-quay-vong .slot, .bds-khoi-noi .m { filter: none; }
+      .bds-gia-chot .m { filter: none; }
+      .bds-khoi-noi .k.pill { box-shadow: none; }
+      .bds-gia-chot .bg { display: none; } /* số mờ phía sau lệch với font serif → ẩn  */
+      /* đáy chỉ nhạt bớt (mặt nạ gốc mờ hẳn về 0 làm mất dấu nặng: "THỰ" đọc thành "THU") */
+      .bds-tang-truong .m { line-height: 1.05; padding-bottom: .28em; margin-bottom: -.28em; -webkit-mask-image: linear-gradient(180deg, #000 60%, #000c 85%); mask-image: linear-gradient(180deg, #000 60%, #000c 85%); } /* mặt nạ phủ cả nét móc (g, y) dưới dòng */
+      /* màu chữ ưu tiên gradient: nhãn neon và chữ gõ cũng tô gradient (không quầng) */
+      .bds-nhan-neon .m.neon { background: linear-gradient(180deg, color-mix(in srgb, var(--c) 35%, #fff) 20%, var(--c) 60%, var(--c2) 100%);
+        -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: none; padding: .24em .1em .08em; filter: none; }
+      .bds-go-chu .typer { background: linear-gradient(180deg, #fff 20%, color-mix(in srgb, var(--c) 45%, #fff) 60%, var(--c) 100%);
+        -webkit-background-clip: text; background-clip: text; color: transparent; padding: .2em .02em .06em; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="{{COMP}}" data-start="0" data-width="1080" data-height="1920" data-duration="{{DURATION}}">
+      <video class="clip" id="ft" src="assets/footage.mp4" muted data-start="0" data-duration="{{DURATION}}" data-media-start="0" data-track-index="0"></video>
+      <div class="clip scrim" id="blur" data-start="0" data-duration="{{DURATION}}" data-track-index="1"></div>
+      <div class="clip scrim" id="scrim" data-start="0" data-duration="{{DURATION}}" data-track-index="2"></div>
+      <div class="clip scrim" id="scrim-low" data-start="0" data-duration="{{DURATION}}" data-track-index="2"></div>
+      <div class="clip" id="kt" data-start="0" data-duration="{{DURATION}}" data-track-index="3" style="position:absolute;inset:0">
+{{CHUNG_HTML}}      </div>
+
+      {{SFX}}
+      {{MUSIC}}
+      <audio id="voice" src="assets/voice.wav" data-start="0" data-duration="{{VOICE_DUR}}" data-track-index="9" data-volume="1"></audio>
+    </div>
+    {{CHUNG_RUNTIME}}
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      const KT = {{KT}};
+      const CHUNG_JS = {{CHUNG_JS}}; // khối bộ chung: mã GSAP sinh sẵn theo mốc của khối (lib/build.mjs)
+      const ST = {{STYLE}}; // { display, sans, script: tên font CSS · loads: [chuỗi document.fonts.load] · scrim: "gradient" | "mo" }
+      const q = (f) => `"${f}", sans-serif`;
+      // Chờ tải đủ font (kể cả bộ ký tự tiếng Việt) rồi mới dựng: đo bằng font dự phòng sẽ co chữ sai
+      const VI = "ĐẤT TRỐNG ỞỮỰỆẢ ƯNG Ý đấtrốngởữựệả 0123456789²";
+      Promise.all(ST.loads.map((f) => document.fonts.load(f, VI))).then(() => document.fonts.ready).then(() => {
+        const host = document.getElementById("kt");
+        document.documentElement.style.setProperty("--script", q(ST.script));
+        document.documentElement.style.setProperty("--serif", q(ST.serif));
+        document.documentElement.style.setProperty("--script2", q(ST.script2));
+        let scrimBottom = 0, lowTop = 1e9, lowBottom = 0;
+        const fit = (slot, c, o, h) => { // khối rộng quá ô thì dựng lại với cỡ nhỏ hơn
+          const Wd = slot.clientWidth * 0.96; // chừa 4% cho đoạn trôi phóng to khi đứng yên
+          for (let n = 0; n < 3 && h.r.offsetWidth > Wd; n++) {
+            const w = h.r.offsetWidth; h.r.remove();
+            o = { ...o, size: Math.floor((o.size * Wd) / w) - 1 };
+            h = BDS.make(c.p, slot, o);
+          }
+          return [o, h];
+        };
+        const chungIn = []; // bộ chung: gắn chuyển động SAU khi mọi khối đã đặt chỗ (trạng thái đầu của hiệu ứng làm lệch phép đo bố cục)
+        KT.forEach((c, i) => {
+          const chung = c.p.startsWith("chung:"); // bộ chung: ô đã có sẵn trong #kt (HTML sinh lúc build)
+          const slot = chung ? document.getElementById("ktc" + i) : document.createElement("div");
+          const low = (c.top ?? 250) >= 900;
+          slot.className = "kt-slot" + (low ? " low" : c.narrow ? " narrow" : "") + ((c.p === "cao-trao" && (c.o.align ?? "trai") === "trai") || c.p === "pill-xep" ? " left" : c.p === "cao-trao" && c.o.align === "phai" ? " right" : "") + " fx-" + (c.fx ?? "khong") + (c.objTop != null ? " behind" : "");
+          slot.id = "kt" + i; slot.style.top = (c.top ?? 250) + "px";
+          host.appendChild(slot);
+          let o = { size: 160, display: q(ST.display), sans: q(ST.sans), ...c.o }, h;
+          // bộ chung: căn giữa ô, giới hạn bề rộng theo ô, runtime presets.mjs thu nhỏ khối nếu rộng quá
+          // phần chữ nhô lên trên mép ô (dấu, số lớn treo trên) thì đẩy cả khối xuống cho đỉnh chữ thật nằm đúng mép ô
+          const place = () => { const pos = slot.querySelector(".tp-pos"); pos.style.left = slot.clientWidth / 2 + "px"; pos.style.top = "0px"; pos.dataset.maxw = Math.round(slot.clientWidth * 0.96); window.__tpLay(pos);
+            const over = slot.getBoundingClientRect().top - window.__tpInk(pos.firstElementChild).top; if (over > 0) pos.style.top = Math.ceil(over) + "px"; };
+          if (chung) { place(); h = { r: slot.querySelector(".tp"), parts: {}, p: {}, o }; }
+          else { h = BDS.make(c.p, slot, o); [o, h] = fit(slot, c, o, h); }
+          // Chữ sau người (luật 11): phần dưới dòng chữ chính nằm sau đỉnh đầu (objTop), behindFrac 0,3 (người giữa) – 0,4 (người lệch)
+          if (c.objTop != null && h.parts.m) {
+            const m = (h.parts.m.l ?? h.parts.m).getBoundingClientRect(), s0 = slot.getBoundingClientRect();
+            slot.style.top = Math.max(250, Math.round(c.objTop - (m.bottom - s0.top) + (c.behindFrac ?? 0.35) * m.height)) + "px";
+          }
+          // khối xuống dưới y 700 → ô hẹp x 60–940 (né cột nút bên phải), co lại nếu cần
+          const rectOf = () => (chung ? window.__tpInk(h.r) : h.r.getBoundingClientRect()); // bộ chung: theo nét chữ thật
+          if (!low && !slot.classList.contains("narrow") && rectOf().bottom > 700) { slot.classList.add("narrow"); if (chung) place(); else [o, h] = fit(slot, c, o, h); }
+          const rb = rectOf();
+          c.zone = c.objTop != null ? "none" : low ? "low" : "top"; c.cy = (rb.top + rb.bottom) / 2;
+          if (c.zone === "low") { lowTop = Math.min(lowTop, rb.top); lowBottom = Math.max(lowBottom, rb.bottom); }
+          else if (c.zone === "top") scrimBottom = Math.max(scrimBottom, rb.bottom);
+          if (chung) chungIn.push(() => CHUNG_JS[i](tl)); // vào + ra (mờ + bay lên lúc c.out) đã nằm trong mã sinh sẵn
+          else BDS.in(tl, h, c.at);
+          if (!chung && c.out < 900) { // out 999 = giữ tới hết video
+            if (h.p.leave) h.p.leave(tl, h.parts, c.out - 0.05, parseFloat(getComputedStyle(h.r).fontSize));
+            BDS.out(tl, h, c.out, 0.3); // tan đồng loạt: mờ + nhòe (cả cụm cao-trao cùng lúc)
+          }
+          (window.__kt = window.__kt || []).push({ ...c, h });
+        });
+        window.__tpLock = true; chungIn.forEach((f) => f()); // từng khối đã bố cục riêng trong place(); khóa để runtime không đo lại
+        // bộ chung: tua tới lúc khối đã đứng yên, đo nét chữ thật rồi chỉnh lần cuối (hiệu ứng như zoomCh làm nét lúc đứng yên khác lúc đo bố cục)
+        for (const c of window.__kt) {
+          if (!c.p.startsWith("chung:")) continue;
+          tl.seek(Math.min(c.at + 1.6, c.out - 0.05, tl.duration() - 0.05), false);
+          const slot = c.h.r.closest(".kt-slot"), pos = c.h.r.parentElement, sr = slot.getBoundingClientRect(), { left: l, right: r, top: t } = window.__tpInk(c.h.r);
+          const dx = (sr.left + sr.right) / 2 - (l + r) / 2, dy = Math.max(0, sr.top - t);
+          if (Math.abs(dx) > 0.5) pos.style.left = parseFloat(pos.style.left) + dx + "px";
+          if (dy > 0.5) pos.style.top = parseFloat(pos.style.top || 0) + dy + "px";
+        }
+        tl.seek(0, false);
+        // ---------- lớp phủ: kích thước theo khối, độ đậm theo nền, chỉ hiện khi có chữ ----------
+        const sc = { top: document.getElementById("scrim"), low: document.getElementById("scrim-low") }, blur = document.getElementById("blur");
+        const geo = { top: [0, Math.round(scrimBottom + 160)], low: [Math.round(lowTop - 260), Math.round(lowBottom - lowTop + 520)] };
+        const sm = (t) => { t = Math.min(1, Math.max(0, t)); return t * t * t * (t * (t * 6 - 15) + 10); };
+        const band = (f, a, b) => (f < a ? sm(f / a) : f > b ? 1 - sm((f - b) / (1 - b)) : 1);
+        const PROF = { top: (f) => 0.9 * Math.pow(1 - Math.min(1, Math.max(0, f)), 1.6), low: (f) => 0.7 * band(f, 0.35, 0.65) };
+        const grad = (z, alpha) => `linear-gradient(180deg, ${Array.from({ length: 25 }, (_, i) => `rgba(0,0,0,${alpha(PROF[z](i / 24)).toFixed(3)}) ${((i / 24) * 100).toFixed(1)}%`).join(", ")})`;
+        for (const z of ["top", "low"]) {
+          sc[z].style.top = geo[z][0] + "px"; sc[z].style.height = geo[z][1] + "px";
+          sc[z].style.background = grad(z, (a) => a);
+        }
+        // nền mờ (luật 18, bậc cuối): cùng hình dạng dải trên, chỉ bật cho khối được đo là cần (c.blur) hoặc khi style chọn "mo"
+        blur.style.height = geo.top[1] + "px";
+        blur.style.webkitMaskImage = blur.style.maskImage = grad("top", (a) => Math.min(1, a / 0.9));
+        const alphaAt = (zone, y) => PROF[zone]((y - geo[zone][0]) / geo[zone][1]);
+        // nền đã đủ tương phản (độ phủ cần < 0,08) thì KHÔNG phủ — lớp phủ chỉ dùng khi cần (luật 15)
+        for (const zone of ["top", "low"]) {
+          const ks = KT.filter((c) => c.zone === zone);
+          const els = [sc[zone]];
+          let cur = 0;
+          ks.forEach((c, j) => {
+            const target = (c.scrim ?? 0) < 0.08 ? 0 : Math.min(1, c.scrim / Math.max(0.2, alphaAt(zone, c.cy)));
+            const prev = ks[j - 1], next = ks[j + 1];
+            const join = prev && c.at - prev.out < 1.0;
+            els.forEach((e) => tl.fromTo(e, { opacity: e === blur ? (cur ? 1 : 0) : cur }, { opacity: e === blur ? 1 : target, duration: join ? 0.45 : 0.55, ease: "sine.inOut", immediateRender: false }, Math.max(0, c.at - (join ? 0.15 : 0.45))));
+            cur = target;
+            if (c.out < 900 && !(next && next.at - c.out < 1.0)) {
+              els.forEach((e) => tl.fromTo(e, { opacity: e === blur ? 1 : cur }, { opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false }, c.out));
+              cur = 0;
+            }
+          });
+        }
+        { // nền mờ theo khối: khối liền nhau (nghỉ < 1 s) giữ mờ liên tục
+          const bs = KT.filter((c) => c.zone === "top" && (c.blur || (ST.scrim === "mo" && c.scrim > 0)));
+          bs.forEach((c, j) => {
+            const prev = bs[j - 1], next = bs[j + 1];
+            if (!(prev && c.at - prev.out < 1.0)) tl.fromTo(blur, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "sine.inOut", immediateRender: false }, Math.max(0, c.at - 0.45));
+            if (c.out < 900 && !(next && next.at - c.out < 1.0)) tl.fromTo(blur, { opacity: 1 }, { opacity: 0, duration: 0.6, ease: "sine.inOut", immediateRender: false }, c.out);
+          });
+        }
+        // đăng ký timeline SAU khi dựng xong (lint: gsap_timeline_registered_before_async_build)
+        window.__timelines["{{COMP}}"] = tl;
+        window.__hfForceTimelineRebind?.();
+      });
+    </script>
+  </body>
+</html>

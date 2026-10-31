@@ -1,0 +1,5 @@
+work/
+build/
+.env
+.secrets/
+node_modules/

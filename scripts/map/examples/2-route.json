@@ -1,0 +1,17 @@
+{
+ "template": "route",
+ "region": "hcm-dongnai",
+ "style": "dark",
+ "theme": "neon",
+ "transcript": "transcript-mau.json",
+ "start": 0,
+ "points": { "q1": [106.7009, 10.7769], "an-phu": [106.7535, 10.7985], "long-thanh": [107.0535, 10.776] },
+ "route": { "via": ["q1", "an-phu", "long-thanh"], "follow": "roads" },
+ "drawAt": "@1",
+ "drawDur": 3.6,
+ "fromLabel": { "texts": ["QUẬN 1", "điểm xuất phát"], "at": "@0+0.2" },
+ "toLabel": { "texts": ["LONG THÀNH", "sân bay quốc tế"], "at": "@2:sân bay" },
+ "area": { "fromMap": { "layer": "landuse", "kind": "aerodrome", "near": "long-thanh" }, "at": "@2:Long Thành" },
+ "places": [{ "point": [106.98, 11.0], "text": "ĐỒNG NAI", "out": "@1+1" }],
+ "duration": "@2.end+1.6"
+}

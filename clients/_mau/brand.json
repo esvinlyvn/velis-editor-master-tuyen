@@ -1,0 +1,14 @@
+{
+  "khach": "Tên hiển thị (sale / kênh / dự án)",
+  "slug": "ten-khach",
+  "mau_nhan": ["#FFB000", "#FFF1A8"],
+  "font_uu_tien": null,
+  "lut": { "file": null, "cuong_do": 0.65 },
+  "cta": { "bat": true, "chu": "Nhắn tin để nhận bảng giá", "icon": "chat", "follow": true },
+  "logo": null,
+  "ghi_chu": "Điều khách đã dặn riêng (không trùng luật chung).",
+  "lich_su": [
+    { "video": "ten-video", "ngay": "2026-10-29", "preset_chinh": "B18:tieu-de-kep", "font_chinh": "Be Vietnam Pro", "font_dan": "Be Vietnam Pro",
+      "cach_hien": "mờ → nét", "lop_toi": "gradient từ mép trên" }
+  ]
+}
