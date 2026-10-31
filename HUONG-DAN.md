@@ -4,17 +4,17 @@ Bộ công cụ này nhận **clip quay thật về bất động sản** (ngư�
 
 Anh/chị sẽ có **một repo riêng**, private, chỉ mình anh/chị có quyền. Luật anh/chị dạy chỉ nằm trong repo đó. Repo không nối với ai khác.
 
-Làm lần lượt từ bước 1 đến bước 7. Mỗi bước có phần **Xong khi** để biết đã làm đúng. Chỗ nào ghi **(người giao)** là việc người giao bộ công cụ làm, anh/chị chỉ cần chờ.
+Làm lần lượt từ bước 1 đến bước 6 (bước 7 khi muốn nhận bản cập nhật). Mỗi bước có phần **Xong khi** để biết đã làm đúng. Chỗ nào ghi **(người giao)** là việc người giao bộ công cụ làm, anh/chị chỉ cần chờ.
 
 | Bước | Việc | Thời gian |
 |---|---|---|
 | 1 | Chuẩn bị tài khoản Claude và GitHub | 15 phút |
 | 2 | Nhận repo riêng từ repo mẫu | 5 phút |
 | 3 | Cho Claude quyền vào repo | 3 phút |
-| 4 | Tạo môi trường cloud | 5 phút |
-| 5 | Phiên đầu tiên: kiểm mọi thứ chạy được | 10 phút |
-| 6 | Làm video đầu tiên | 40–60 phút |
-| 7 | Dạy luật mới, kỹ năng mới | khi cần |
+| 4 | Chọn mạng cho môi trường (Network Full) | 1 phút |
+| 5 | Làm video đầu tiên | 40–60 phút |
+| 6 | Dạy luật mới, kỹ năng mới | khi cần |
+| 7 | Nhận bản cập nhật từ repo mẫu | khi có bản mới |
 
 Phần sau bước 7: [chạy trên máy của mình](#chạy-trên-máy-của-mình), [lỗi hay gặp](#lỗi-hay-gặp), [quyền sử dụng tài nguyên](#quyền-sử-dụng-tài-nguyên), [bảng lệnh](#bảng-lệnh-nhanh).
 
@@ -65,54 +65,22 @@ Phần sau bước 7: [chạy trên máy của mình](#chạy-trên-máy-của-m
 
 ---
 
-## Bước 4. Tạo môi trường cloud
+## Bước 4. Chọn mạng cho môi trường (một lần, 1 phút)
 
-Môi trường là cấu hình của máy ảo Claude dùng để làm việc: được vào mạng nào, cài sẵn gì. Tạo một lần, các phiên sau dùng lại.
+1. Ở claude.ai/code, bấm vào **tên môi trường** cạnh ô chọn repo (thường là "Default") → **Edit**.
+2. **Network access:** chọn **Full** → **Lưu**. (Cần để tải model nhận diện giọng nói và tải clip từ Google Drive.)
 
-1. Ở claude.ai/code, bấm vào **tên môi trường** cạnh ô chọn repo (mặc định thường là "Default") → **Thêm môi trường** (hoặc chọn môi trường rồi bấm **Edit**).
-2. **Tên:** ví dụ `dung-video`.
-3. **Network access:** chọn **Full**. (Cần để tải model nhận diện giọng nói và tải clip từ Google Drive.)
-4. **Setup script:** dán nguyên đoạn dưới, **không sửa chữ nào**. Đoạn này tự tìm thư mục repo, dùng được với mọi tên repo.
-   ```bash
-   #!/bin/bash
-   set -e
-   command -v ffmpeg >/dev/null || (apt-get update -qq && apt-get install -y -qq ffmpeg)
-   command -v uv >/dev/null || curl -LsSf https://astral.sh/uv/install.sh | sh
-   export PATH="$HOME/.local/bin:$PATH"
-   uv venv -q ~/.asr
-   VIRTUAL_ENV=~/.asr uv pip install -q faster-whisper numpy imageio pillow "rembg[cpu]" opencv-python-headless
-   for d in */; do [ -f "$d/package.json" ] && (cd "$d" && npm ci --no-audit --no-fund); done; true
-   ```
-5. Lưu.
-
-**Xong khi:** môi trường `dung-video` hiện trong danh sách môi trường.
-
----
-
-## Bước 5. Phiên đầu tiên: kiểm mọi thứ chạy được
-
-1. Ở claude.ai/code, tạo phiên mới: chọn **repo của anh/chị**, nhánh **main**, môi trường **dung-video**.
-2. Dán vào khung chat:
-   ```
-   Đây là repo dựng video BĐS của tôi, lần đầu chạy trên cloud. Hãy:
-   1. Đọc CLAUDE.md và HUONG-DAN.md.
-   2. Chạy npm run example. Báo kết quả và gửi tôi file build/example/output.mp4.
-   3. Kiểm ~/.asr/bin/python import được faster_whisper, rembg.
-   4. Nếu thiếu gì, cài cho phiên này và nói tôi cần thêm dòng nào vào setup script.
-   ```
-3. Chờ vài phút. Lần đầu máy ảo phải cài thư viện.
+Không cần dán gì thêm: repo **tự cài mọi thứ** mỗi khi mở phiên (`.claude/hooks/session-start.sh`). Phiên đầu tiên chờ vài phút để cài, các phiên sau vào ngay.
 
 Mỗi phiên chạy trên một máy ảo riêng, lấy repo từ GitHub về, làm xong thì đẩy lên lại. **Máy ảo bị xóa sau khi phiên kết thúc**: thứ gì chưa push lên GitHub hoặc chưa tải về là mất.
 
-> Claude có thể hỏi trước khi chạy lệnh hay sửa file. Đọc lướt rồi cho phép.
-
-**Xong khi:** Claude báo `npm run example` render được (khoảng 2,5 phút; video 15,5 giây: dãy nhà quay 2 máy + drone, giọng đọc, 8 khối chữ chốt, SFX, nhạc), gửi file vào khung chat, và báo import được `faster_whisper`, `rembg`. Nếu dòng đầu phiên báo "Script cài đặt thất bại", xem [Lỗi hay gặp](#lỗi-hay-gặp).
+**Xong khi:** môi trường đã để Network **Full**. Làm video luôn ở bước 5.
 
 ---
 
-## Bước 6. Làm video đầu tiên
+## Bước 5. Làm video đầu tiên
 
-### 6a. Đưa clip lên Google Drive
+### 5a. Đưa clip lên Google Drive
 
 1. Tải clip `.mp4` / `.mov` lên Google Drive (hoặc Dropbox). Nhiều clip thì bỏ chung một thư mục, đặt tên theo thứ tự: `01.mp4`, `02.mp4`…
 2. Tài liệu dự án (bảng giá, vị trí, tiện ích, logo) để cùng thư mục. Claude chỉ đưa lên video số liệu **có trong lời nói hoặc trong tài liệu này**, không tự bịa.
@@ -120,7 +88,7 @@ Mỗi phiên chạy trên một máy ảo riêng, lấy repo từ GitHub về, l
 
 > Clip của khách là dữ liệu riêng. Chỉ bật chia sẻ trong lúc làm, xong thì tắt. Claude để clip trong `work/`, thư mục này **không bao giờ** được đưa lên GitHub.
 
-### 6b. Giao việc
+### 5b. Giao việc
 
 Tạo phiên mới (repo của mình, môi trường `dung-video`) và nói tự nhiên, càng rõ càng ít bị hỏi lại:
 
@@ -135,7 +103,7 @@ Claude cần biết ba điều, thiếu thì nó hỏi **một lần**:
 - **CTA cuối video:** câu kêu gọi, ví dụ "Nhắn tin để nhận bảng giá".
 - **Clip:** link.
 
-### 6c. Claude làm gì
+### 5c. Claude làm gì
 
 Không cần nhớ, chỉ để biết đang tới đâu. Claude đi đúng 5 bước hậu kỳ chuyên nghiệp (`docs/VAN-HANH.md` mục 3):
 1. **Tiếp nhận:** đọc luật, tải clip về đúng cây thư mục (A-roll người nói, B-roll cảnh dự án, mic rời, nhạc), kiểm từng clip (độ phân giải, Log hay không), tạo bản dựng nhẹ.
@@ -146,7 +114,7 @@ Không cần nhớ, chỉ để biết đang tới đâu. Claude đi đúng 5 b�
 
 Mất khoảng 40–60 phút. Không cần ngồi canh: đóng tab rồi quay lại sau, phiên vẫn chạy.
 
-### 6d. Xem, góp ý, duyệt
+### 5d. Xem, góp ý, duyệt
 
 1. Bấm thẻ file trong khung chat để xem bản xem trước.
 2. Góp ý cụ thể, có giây và lý do:
@@ -164,11 +132,11 @@ Mất khoảng 40–60 phút. Không cần ngồi canh: đóng tab rồi quay l�
 
 ---
 
-## Bước 7. Dạy luật mới, kỹ năng mới
+## Bước 6. Dạy luật mới, kỹ năng mới
 
 Mỗi phiên Claude bắt đầu trắng trơn. Nó chỉ biết **những gì ghi trong repo**. Vì vậy mọi điều anh/chị dạy phải được **ghi vào file, commit và push**, nếu không thì phiên sau quên.
 
-### 7a. Dạy gì, ghi ở đâu
+### 6a. Dạy gì, ghi ở đâu
 
 | Muốn dạy | Ghi vào | Nói với Claude ví dụ |
 |---|---|---|
@@ -179,9 +147,9 @@ Mỗi phiên Claude bắt đầu trắng trơn. Nó chỉ biết **những gì g
 | Kiểu chữ mới | `text-presets/` | "Tạo preset chữ mới tên 'gia-soc' giống mẫu này: …" (gửi ảnh hoặc link video) |
 | Tiếng SFX mới | `sfx/` qua `scripts/sfx-import.mjs` | "Tải các file ở <link> rồi nhập vào kho SFX." |
 | Màu phim (LUT) | `luts/*.cube`, nguồn ghi ở `luts/SOURCES.md` | "Thêm LUT ở <link> tên am-ap, cường độ 0,6, làm mặc định cho khách anh Tuấn." |
-| Một quy trình hoàn toàn mới (video tin tức, video so sánh dự án…) | một **skill** mới ở `.claude/skills/<ten>/SKILL.md` | xem 7c |
+| Một quy trình hoàn toàn mới (video tin tức, video so sánh dự án…) | một **skill** mới ở `.claude/skills/<ten>/SKILL.md` | xem 6c |
 
-### 7b. Câu mẫu để dạy luật
+### 6b. Câu mẫu để dạy luật
 
 ```
 Từ giờ trở đi: số tiền luôn viết "3,2 tỷ" chứ không viết "3.200.000.000".
@@ -196,7 +164,7 @@ Bỏ luật 9 (không vạch gạch hai bên chữ dẫn). Giờ tôi muốn có
 
 Khi hai chỗ nói khác nhau, chỗ đứng trước thắng: **lời anh/chị trong phiên đang làm** > bảng luật `TALKING-HEAD.md` > `brand.json` của khách > `docs/VAN-HANH.md`, `docs/TRINH-BAY.md` > các tài liệu còn lại.
 
-### 7c. Dạy một kỹ năng mới (skill)
+### 6c. Dạy một kỹ năng mới (skill)
 
 Skill là một bản hướng dẫn mà Claude tự mở khi gặp đúng loại việc. Repo có sẵn skill `.claude/skills/bds-editor/SKILL.md` cho việc dựng clip BĐS; mở ra xem để biết một skill trông thế nào.
 
@@ -210,7 +178,7 @@ Dùng lại luật chữ, SFX, kiểm như video thường. Ghi vào .claude/ski
 
 Phần `description` ở đầu file skill quyết định **khi nào** Claude dùng nó, nên ghi rõ những câu anh/chị hay nói. Muốn gọi thẳng thì gõ `/video-so-sanh`.
 
-### 7d. Học từ video mẫu
+### 6d. Học từ video mẫu
 
 ```
 Đây là video tham khảo: <link>. Phân tích cách họ làm hook, đặt chữ, nhịp cắt, chuyển cảnh.
@@ -218,16 +186,16 @@ Cái gì hợp với luật hiện có thì ghi vào docs/TRINH-BAY.md thành m�
 Cái gì trái luật thì liệt kê cho tôi quyết. Không copy nguyên thiết kế của họ.
 ```
 
-### 7e. Kiểm đã "học" chưa, và sửa khi dạy sai
+### 6e. Kiểm đã "học" chưa, và sửa khi dạy sai
 
 - Mở **phiên mới** và hỏi: "Luật về số tiền hiện ghi ở đâu? Đọc lại cho tôi." Trả lời đúng nghĩa là đã lưu.
 - Dạy sai thì nói: "Hoàn tác commit dạy luật vừa rồi." Claude dùng `git revert`, không mất lịch sử.
 
 ---
 
-## Bước 8. Nhận bản cập nhật từ repo mẫu
+## Bước 7. Nhận bản cập nhật từ repo mẫu
 
-Repo mẫu được cập nhật khi có quy tắc, kỹ năng mới đã chốt. Repo của anh/chị **không tự đổi**; muốn lấy bản mới thì làm bước này. Luật, kỹ năng anh/chị tự dạy (bước 7) và các video đã làm vẫn giữ nguyên.
+Repo mẫu được cập nhật khi có quy tắc, kỹ năng mới đã chốt. Repo của anh/chị **không tự đổi**; muốn lấy bản mới thì làm bước này. Luật, kỹ năng anh/chị tự dạy (bước 6) và các video đã làm vẫn giữ nguyên.
 
 1. Báo người giao để được mời lại vào repo mẫu (quyền Read), chấp nhận lời mời.
 2. Mở phiên trên repo **của mình**, dán (thay `<link repo mẫu>` bằng link người giao gửi):
@@ -321,15 +289,15 @@ Có `build/example/output.mp4` khoảng 15,5 giây là xong.
 
 | Triệu chứng | Cách xử lý |
 |---|---|
-| Đầu phiên báo "Script cài đặt thất bại" | Bấm mũi tên xem dòng lỗi. Thường do chép setup script thiếu dòng: sửa ở **Edit** môi trường, dán lại nguyên đoạn ở bước 4, rồi mở phiên mới. Phiên đang chạy thì nhờ Claude cài bù |
+| Đầu phiên báo hook cài đặt (SessionStart) lỗi | Thường do Network chưa để **Full** (bước 4) nên không tải được gói. Sửa rồi mở phiên mới. Phiên đang chạy thì nhờ Claude: "chạy lại .claude/hooks/session-start.sh" |
 | Không thấy repo của mình khi tạo phiên | Chưa cài Claude GitHub App cho repo đó (bước 3) |
 | Claude báo không push được | Như trên: kiểm Claude GitHub App có repo của mình chưa |
 | Không tải được clip hay model, báo bị chặn | Network access của môi trường chưa để **Full** (bước 4) |
-| Link Google Drive tải về file HTML nhỏ | Link chưa để "Bất kỳ ai có đường liên kết" (bước 6a) |
+| Link Google Drive tải về file HTML nhỏ | Link chưa để "Bất kỳ ai có đường liên kết" (bước 5a) |
 | Mất file render | Máy ảo đã bị xóa. Lần sau tải về ngay khi Claude gửi. Dữ liệu dựng đã push thì bảo Claude render lại |
 | Không thấy nút **Use this template** | Chưa chấp nhận lời mời, hoặc người giao chưa bật Template repository. Báo người giao |
 | Chữ tiếng Việt mất dấu, dấu bị cắt | Nói với Claude: "giây X mất dấu chữ Y" |
-| Claude làm sai điều đã dặn hôm trước | Điều đó chưa được ghi vào repo. Dạy lại và bảo ghi vào bảng luật (bước 7) |
+| Claude làm sai điều đã dặn hôm trước | Điều đó chưa được ghi vào repo. Dạy lại và bảo ghi vào bảng luật (bước 6) |
 | Claude báo hết lượt dùng | Gói Pro có giới hạn theo giờ. Chờ, hoặc nâng lên Max |
 
 Bí thì tả lỗi cho Claude kèm nguyên văn thông báo. Claude đọc lỗi và tự sửa được, hoặc chỉ anh/chị chỗ cần bấm.
