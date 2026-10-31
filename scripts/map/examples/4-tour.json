@@ -1,0 +1,13 @@
+{
+ "template": "tour",
+ "region": "hcm-dongnai",
+ "style": "dark",
+ "theme": "gold",
+ "points": { "ben-thanh": [106.6981, 10.7725], "landmark81": [106.7218, 10.7949], "thu-thiem": [106.7212, 10.7748] },
+ "zoom": 14.6,
+ "stops": [
+  { "point": "ben-thanh", "label": { "texts": ["BẾN THÀNH", "chợ trung tâm"] } },
+  { "point": "landmark81", "label": { "texts": ["LANDMARK 81", "Bình Thạnh"] } },
+  { "point": "thu-thiem", "label": { "texts": ["THỦ THIÊM", "bên kia sông"] } }
+ ]
+}

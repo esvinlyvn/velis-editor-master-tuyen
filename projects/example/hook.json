@@ -1,0 +1,7 @@
+{ "video": "example", "client": "_mau",
+  "opening": "Với ba tỷ, mua nhà ở đâu bây giờ?", "peak": 0.2, "payoff": 2.6,
+  "candidates": [
+    { "id": "question", "content": "MUA NHÀ Ở ĐÂU?", "fit": 5, "payoff": 4, "motion": 4, "space": 4 },
+    { "id": "number", "content": "3 TỶ", "fit": 4, "payoff": 2, "motion": 5, "space": 4 },
+    { "id": "title", "content": "VƯỜN MÂY", "fit": 2, "payoff": 3, "motion": 3, "space": 4 }
+  ] }

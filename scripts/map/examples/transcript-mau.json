@@ -1,0 +1,8 @@
+{
+ "source": "mẫu cho scripts/map/examples (không có voice)",
+ "chunks": [
+  { "i": 0, "start": 0.3, "end": 2.2, "speaker": "A", "text": "Từ trung tâm Quận 1," },
+  { "i": 1, "start": 2.5, "end": 5.4, "speaker": "A", "text": "đi theo cao tốc về phía đông," },
+  { "i": 2, "start": 5.8, "end": 8.9, "speaker": "A", "text": "khoảng bốn mươi phút là tới sân bay Long Thành." }
+ ]
+}

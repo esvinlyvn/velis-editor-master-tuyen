@@ -1,0 +1,15 @@
+{
+ "template": "fly",
+ "region": "hcm-dongnai",
+ "style": "dark",
+ "theme": "neon",
+ "points": { "thu-thiem": [106.7212, 10.7748] },
+ "target": "thu-thiem",
+ "wide": { "zoom": 9.4 },
+ "zoom": 14.2,
+ "bearing": -12,
+ "flyAt": 0.7,
+ "flyDur": 3.4,
+ "label": { "texts": ["THỦ THIÊM", "khu đô thị mới"] },
+ "places": [{ "point": [106.70, 10.80], "text": "TP.HCM" }, { "point": [106.98, 11.02], "text": "ĐỒNG NAI" }]
+}

@@ -1,0 +1,9 @@
+{
+ "template": "compare",
+ "region": "hcm-dongnai",
+ "style": "light",
+ "theme": "violet",
+ "points": { "tan-son-nhat": [106.6590, 10.8175], "long-thanh": [107.0535, 10.776] },
+ "a": { "area": { "fromMap": { "layer": "landuse", "kind": "aerodrome", "near": "tan-son-nhat", "zoom": 11 } }, "label": { "texts": ["TÂN SƠN NHẤT", "hiện tại"] } },
+ "b": { "area": { "fromMap": { "layer": "landuse", "kind": "aerodrome", "near": "long-thanh" } }, "label": { "texts": ["LONG THÀNH", "đang xây"] } }
+}

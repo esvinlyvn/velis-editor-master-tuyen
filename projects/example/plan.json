@@ -1,0 +1,186 @@
+{
+ "video": "example",
+ "kenh": null,
+ "recipe": "R2",
+ "style": "S5",
+ "roles": {
+  "con-so": "gia-chot",
+  "phan-khuc": "chu-bac",
+  "canh-bao": "canh-bao",
+  "phap-ly": "nhan-neon",
+  "cta": "go-chu",
+  "tien-ich": "quay-vong"
+ },
+ "hook_peak": "0:3",
+ "edit": {
+  "voice": "02_audio/voiceover/mic.flac",
+  "aroll": [
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 0.0,
+    "out": 2.145,
+    "_": "Với 3 tỷ, mua nhà ở đâu (bỏ câu vấp phía sau)"
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 4.466,
+    "out": 7.049,
+    "punch": true,
+    "_": "Dự án Vườn Mây… 15 phút"
+   },
+   {
+    "src": "01_footage/cam_b/B001.mp4",
+    "in": 7.299,
+    "out": 9.802,
+    "_": "Căn hộ 70 m², 2 phòng ngủ — đổi máy"
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 11.252,
+    "out": 13.648,
+    "cut": -0.2,
+    "_": "Tiện ích — L-cut: thấy cam_a trước 0,2 s"
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 14.748,
+    "out": 15.633,
+    "punch": true,
+    "_": "Không có phí ẩn"
+   },
+   {
+    "src": "01_footage/cam_a/A001.mp4",
+    "in": 16.433,
+    "out": 17.77,
+    "_": "Pháp lý đã có sổ hồng"
+   },
+   {
+    "src": "01_footage/cam_b/B001.mp4",
+    "in": 17.72,
+    "out": 20.258,
+    "cut": 0.25,
+    "_": "CTA — J-cut: nghe 'Nhắn tin' trước khi đổi máy"
+   }
+  ],
+  "broll": [
+   {
+    "src": "01_footage/drone/D001.mp4",
+    "at": 3.2,
+    "dur": 1.5,
+    "in": 0.0,
+    "tr": "dissolve",
+    "move": "drift",
+    "_": "cách trung tâm: nhìn từ trên cao",
+    "sfx": true
+   },
+   {
+    "src": "01_footage/drone/D001.mp4",
+    "at": 8.6,
+    "dur": 1.6,
+    "in": 5.0,
+    "tr": "cut",
+    "move": "push",
+    "_": "công viên; che điểm cắt 9,63 s"
+   }
+  ]
+ },
+ "color": {
+  "correct": "eq=contrast=1.06:saturation=1.08",
+  "lut": "am-nhe.cube",
+  "strength": 0.6
+ },
+ "audio": {
+  "ambience": {
+   "file": "work/example/02_audio/ambience/city.wav",
+   "lufs": -38
+  }
+ },
+ "music": {
+  "file": "work/example/02_audio/music/pad.wav",
+  "bpm": 120
+ },
+ "tail": 1.1,
+ "blocks": [
+  {
+   "role": "mo-dau",
+   "at": 0.1,
+   "o": {
+    "k": "Với 3 tỷ",
+    "m": "MUA NHÀ Ở ĐÂU?"
+   }
+  },
+  {
+   "role": "con-so",
+   "at": "1:dự",
+   "shift": -0.3,
+   "color": "noi-chon",
+   "o": {
+    "k": "VƯỜN MÂY · CÁCH TRUNG TÂM",
+    "value": 15,
+    "suffix": " PHÚT"
+   }
+  },
+  {
+   "role": "con-so",
+   "at": "2:căn",
+   "o": {
+    "k": "CĂN HỘ",
+    "value": 70,
+    "suffix": " m²"
+   },
+   "sfx": [
+    "text-tick",
+    0.5
+   ],
+   "_sfx": "lib/qc.mjs --asr (so theo đoạn) báo counter-roll che chữ \"căn\" → tiếng ngắn"
+  },
+  {
+   "role": "phan-khuc",
+   "at": "2:2",
+   "shift": -0.2,
+   "o": {
+    "k": "Thiết kế",
+    "m": "2 PHÒNG NGỦ"
+   }
+  },
+  {
+   "role": "tien-ich",
+   "at": "3:hồ",
+   "shift": -0.15,
+   "o": {
+    "k": "Tiện ích",
+    "words": [
+     "HỒ BƠI",
+     "PHÒNG GYM",
+     "CÔNG VIÊN"
+    ],
+    "step": 0.65
+   }
+  },
+  {
+   "role": "canh-bao",
+   "at": "4:phí",
+   "shift": 0.3,
+   "o": {
+    "m": "PHÍ ẨN"
+   }
+  },
+  {
+   "role": "phap-ly",
+   "at": "5:hồng",
+   "shift": 0.45,
+   "color": "an-toan",
+   "o": {
+    "m": "ĐÃ CÓ SỔ HỒNG"
+   }
+  },
+  {
+   "role": "cta",
+   "at": "6:giá",
+   "o": {
+    "m": "Nhắn em nhận bảng giá"
+   }
+  }
+ ],
+ "sfx_layer": []
+}

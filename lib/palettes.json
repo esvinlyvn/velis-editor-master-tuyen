@@ -1,0 +1,20 @@
+{
+  "_doc": "Bảng màu gradient cho chữ chốt (luật 6). c = màu giữa, c2 = màu đáy. Khối chữ chọn màu bằng 'color': tên nghĩa (main, so, an-toan, noi-chon, thoi-gian, phu-dinh) theo bộ đang dùng, hoặc tên màu trực tiếp. brand.json của khách có 'mau_nhan' thì ghi đè 'main'.",
+  "colors": {
+    "champ": { "c": "#e2b864", "c2": "#8f6420" },
+    "gold":  { "c": "#ffd166", "c2": "#e8761a" },
+    "amber": { "c": "#ffb347", "c2": "#c4610f" },
+    "jade":  { "c": "#6fe0a8", "c2": "#178a55" },
+    "mint":  { "c": "#62e39c", "c2": "#0e7a3f" },
+    "sea":   { "c": "#5ee6f2", "c2": "#1f6fd6" },
+    "sky":   { "c": "#8fd3ff", "c2": "#2f6fd0" },
+    "coral": { "c": "#ff9a86", "c2": "#d6302a" },
+    "ruby":  { "c": "#ff8a7a", "c2": "#c01f3a" },
+    "silver": { "c": "#e6e9ee", "c2": "#8d96a3" }
+  },
+  "sets": {
+    "champagne": { "main": "champ", "so": "champ", "an-toan": "jade", "noi-chon": "sky", "thoi-gian": "amber", "phu-dinh": "ruby" },
+    "vang-bien": { "main": "gold", "so": "gold", "an-toan": "mint", "noi-chon": "sea", "thoi-gian": "amber", "phu-dinh": "coral" },
+    "bac-xanh":  { "main": "silver", "so": "sky", "an-toan": "mint", "noi-chon": "sea", "thoi-gian": "amber", "phu-dinh": "coral" }
+  }
+}

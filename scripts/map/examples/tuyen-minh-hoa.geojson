@@ -1,0 +1,8 @@
+{
+ "type": "Feature",
+ "properties": { "name": "Tuyến minh họa", "planned": true, "_ghi_chu": "Hình học MINH HỌA để thử công cụ, không phải tuyến quy hoạch thật." },
+ "geometry": { "type": "LineString", "coordinates": [
+  [106.7212, 10.7748], [106.7450, 10.7720], [106.7800, 10.7660], [106.8200, 10.7600], [106.8600, 10.7580],
+  [106.9000, 10.7600], [106.9400, 10.7650], [106.9800, 10.7700], [107.0150, 10.7730], [107.0400, 10.7760]
+ ] }
+}

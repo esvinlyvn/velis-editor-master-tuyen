@@ -1,0 +1,11 @@
+{
+ "template": "area",
+ "region": "hcm-dongnai",
+ "style": "light",
+ "theme": "coral",
+ "points": { "tan-son-nhat": [106.6590, 10.8175], "q1": [106.7009, 10.7769] },
+ "areas": [
+  { "fromMap": { "layer": "landuse", "kind": "aerodrome", "near": "tan-son-nhat", "zoom": 11 }, "label": { "texts": ["TÂN SƠN NHẤT", "sân bay"] } },
+  { "circle": { "center": "q1", "km": 3 }, "label": { "texts": ["BÁN KÍNH 3 KM", "quanh trung tâm Quận 1"] } }
+ ]
+}

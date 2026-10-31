@@ -1,0 +1,43 @@
+{
+  "_doc": "Công thức phối bộ (docs/PHONG-CACH-ME4REAL.md, mục Ma trận). plan.json ghi 'recipe' → lib/build.mjs in khung để đối chiếu và kiểm tỷ lệ đoạn. Khung K: K1 hook · K2 định vị · K3 thông số · K4 tiện ích/trải nghiệm · K5 bằng chứng & chính sách · K6 CTA. ty_le = phần thời lượng gợi ý. hook = mã trong scripts/hook-pick.mjs. vai_uu_tien = vai chữ (QUY-TAC-CHU) nên xuất hiện. Không có công thức cần video AI hay skit (người dùng đã bỏ).",
+  "R1": {
+    "ten": "Hiện trường", "hop_voi": "đất nền, nhà phố, lô thương mại, người dẫn đứng tại chỗ",
+    "khung": [["K1", 0.08], ["K2", 0.2], ["K3", 0.15], ["K4", 0.25], ["K5", 0.2], ["K6", 0.07]],
+    "hook": ["number", "stamp", "title"], "style_goi_y": ["S1", "S3", "S5"],
+    "vai_uu_tien": ["con-so", "con-so-tien", "dia-danh", "trang-thai", "cao-trao", "cta"],
+    "minh_hoa": ["bản đồ vị trí + ghim", "viền nét đứt quanh lô đất + diện tích", "pill thông số"],
+    "sfx": ["bung-mo", "con-so", "ban-do", "cum-chu", "cta"]
+  },
+  "R2": {
+    "ten": "Căn hộ cao cấp", "hop_voi": "dự án mới, có render / sa bàn / nhà mẫu",
+    "khung": [["K1", 0.08], ["K2", 0.15], ["K3", 0.15], ["K4", 0.32], ["K5", 0.2], ["K6", 0.07]],
+    "hook": ["title", "mystery", "number"], "style_goi_y": ["S4", "S2"],
+    "vai_uu_tien": ["ten-du-an", "phan-khuc", "tien-ich", "canh-quan", "cao-trao", "cta"],
+    "minh_hoa": ["glow tô sáng tòa nhà trên render", "lưới ảnh tiện ích 3×2", "thẻ logo dự án"],
+    "sfx": ["bung-mo", "cum-chu", "con-so", "cta"]
+  },
+  "R5": {
+    "ten": "Bản đồ dòng tiền", "hop_voi": "đầu tư cho thuê, so sánh vị trí, mặt bằng kinh doanh",
+    "khung": [["K1", 0.08], ["K2", 0.35], ["K3", 0.2], ["K4", 0.1], ["K5", 0.2], ["K6", 0.07]],
+    "hook": ["number", "question", "versus"], "style_goi_y": ["S1", "S5"],
+    "vai_uu_tien": ["dia-danh", "con-so-tien", "so-sanh", "tang-giam", "cta"],
+    "minh_hoa": ["bản đồ chiếm ~40% thời lượng", "đường đi phát sáng + khoảng cách", "sơ đồ nhánh vị trí 3 nút"],
+    "sfx": ["bung-mo", "ban-do", "con-so", "cta"]
+  },
+  "R6": {
+    "ten": "Tour 60 giây", "hop_voi": "nhà mẫu, căn hoàn thiện, người dẫn đi một vòng",
+    "khung": [["K1", 0.1], ["K2", 0.05], ["K3", 0.1], ["K4", 0.5], ["K5", 0.15], ["K6", 0.1]],
+    "hook": ["mystery", "title"], "style_goi_y": ["S4", "S3"],
+    "vai_uu_tien": ["chot-y", "thuat-ngu", "tien-ich", "liet-ke", "cao-trao", "cta"],
+    "minh_hoa": ["nhãn phòng theo cú máy", "chữ sau người khi máy đứng yên"],
+    "sfx": ["bung-mo", "cum-chu", "cta"]
+  },
+  "R7": {
+    "ten": "Tin thị trường", "hop_voi": "quy hoạch, hạ tầng, giá tăng; có nguồn báo trong info/",
+    "khung": [["K1", 0.08], ["K2", 0.2], ["K3", 0.15], ["K4", 0.12], ["K5", 0.38], ["K6", 0.07]],
+    "hook": ["number", "strike", "question"], "style_goi_y": ["S1", "S2"],
+    "vai_uu_tien": ["con-so", "tang-giam", "phap-ly", "canh-bao", "cta"],
+    "minh_hoa": ["ảnh chụp báo, phóng to tiêu đề (có nguồn)", "bản đồ quy hoạch"],
+    "sfx": ["bung-mo", "con-so", "cta"]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "_doc": "Tổ hợp phong cách (gen) đã thử, dùng làm điểm xuất phát. Một video = một tổ hợp, sau đó đổi tiếp theo luật 5: khác video trước của cùng kênh ở ≥ 3/5 gen (preset chính, font chính, font dẫn, cách hiện, lớp tối). Thêm tổ hợp mới vào đây khi người dùng duyệt một video có phong cách mới. fonts: [gói @fontsource, [file weight]] — weight dạng '700-italic' cho chữ nghiêng. Font từ file: [\"file:fonts/svn/<tên>.otf\"] (bộ SVN, xem docs/SOURCES.md). Vai font: display, sans, script (viết tay, mặc định Lobster), script2 (viết tay cọ), serif.",
+  "S1": {
+    "ten": "Tối giản",
+    "main": "tieu-de-kep",
+    "palette": "vang-bien",
+    "scrim": "gradient",
+    "display": [
+      "be-vietnam-pro",
+      [
+        900
+      ]
+    ],
+    "sans": [
+      "be-vietnam-pro",
+      [
+        700
+      ]
+    ],
+    "cach_hien": "mờ → nét"
+  },
+  "S2": {
+    "ten": "Khối nổi",
+    "main": "khoi-noi",
+    "palette": "vang-bien",
+    "scrim": "gradient",
+    "display": [
+      "big-shoulders-display",
+      [
+        900
+      ]
+    ],
+    "sans": [
+      "unbounded",
+      [
+        600
+      ]
+    ],
+    "cach_hien": "lật từng ký tự, nhãn màu"
+  },
+  "S3": {
+    "ten": "Điện ảnh",
+    "main": "dien-anh",
+    "palette": "champagne",
+    "scrim": "gradient",
+    "display": [
+      "archivo",
+      [
+        800
+      ]
+    ],
+    "sans": [
+      "saira",
+      [
+        600
+      ]
+    ],
+    "cach_hien": "co chữ từ mờ sang nét, hợp chữ sau người"
+  },
+  "S4": {
+    "ten": "Tạp chí",
+    "main": "tap-chi",
+    "palette": "champagne",
+    "scrim": "gradient",
+    "display": [
+      "playfair-display",
+      [
+        700,
+        800,
+        "700-italic"
+      ]
+    ],
+    "sans": [
+      "plus-jakarta-sans",
+      [
+        700
+      ]
+    ],
+    "cach_hien": "từng từ dâng lên, serif nghiêng"
+  },
+  "S5": {
+    "ten": "Tăng trưởng",
+    "main": "tang-truong",
+    "palette": "vang-bien",
+    "scrim": "gradient",
+    "display": [
+      "yeseva-one",
+      [
+        400
+      ]
+    ],
+    "sans": [
+      "encode-sans",
+      [
+        600,
+        700
+      ]
+    ],
+    "cach_hien": "từng ký tự dâng lên, nhiều preset theo nghĩa"
+  },
+  "S6": {
+    "ten": "ME4REAL",
+    "main": "cao-trao",
+    "palette": "vang-bien",
+    "scrim": "gradient",
+    "display": [
+      "montserrat",
+      [
+        300,
+        700,
+        800,
+        900
+      ]
+    ],
+    "sans": [
+      "montserrat",
+      [
+        600,
+        700
+      ]
+    ],
+    "script": [
+      "lobster",
+      [
+        400
+      ]
+    ],
+    "script2": [
+      "file:fonts/svn/SVN-Haptic Script.otf"
+    ],
+    "serif": [
+      "file:fonts/svn/SVN-Paris Pro.otf"
+    ],
+    "cach_hien": "chữ hình học dày khít + viết tay nét dày (Lobster) + chữ to nét mảnh; bộ preset ME4REAL (BDS-PRESETS 2b)"
+  },
+  "_script": {
+    "_doc": "Font viết tay cho vai 'cam' của preset cao-trao và chữ viết tay các preset BĐS/ME4REAL. Lobster (nét dày): người dùng duyệt 30/10/2026 chê Dancing Script và SVN-Nickainley mỏng, xấu ở cỡ nhỏ",
+    "default": [
+      "lobster",
+      [
+        400
+      ]
+    ],
+    "script2_default": [
+      "great-vibes",
+      [
+        400
+      ]
+    ]
+  }
+}
