@@ -3,3 +3,4 @@ build/
 .env
 .secrets/
 node_modules/
+__pycache__/

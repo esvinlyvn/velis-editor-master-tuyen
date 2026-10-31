@@ -15,5 +15,5 @@ Luật nền:
 - Trước render: `node lib/qc.mjs projects/<video>` đạt (gồm kt-check và text-ink: chữ không xén, không đè dấu), đã xem snapshot. Sau render: `node lib/qc.mjs projects/<video> --asr` đạt hết (VAN-HANH mục 8) và các mục kiểm của TRINH-BAY mục 3. Bản cuối chỉ xuất khi QC đạt.
 - Mọi bước chạy trên máy, không gọi API ngoài, không commit khóa. Không commit clip thô và file render (`work/`, `build/`). Không dùng video AI.
 - Không dùng SFX scribble-2.
-- Python chạy bằng `~/.asr/bin/python` (cài theo `HUONG-DAN.md` mục 4b hoặc 7c).
+- Python chạy bằng `~/.asr/bin/python` (trên cloud `.claude/hooks/session-start.sh` tự cài khi mở phiên; chạy trên máy: `HUONG-DAN.md` mục Chạy trên máy của mình).
 - Người dùng chốt luật mới thì ghi vào bảng của `TALKING-HEAD.md` kèm nguồn.
